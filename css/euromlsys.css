@@ -24,3 +24,36 @@
 .footer {
   padding: 20px 0 0 0;
 }
+
+ul.list  li {
+  font-size: 1.6em;
+  line-height: 1.4em;
+  margin-left: 2em;
+  list-style: circle;
+  list-style-type: disc;
+}
+
+h2.subtitle {
+  margin-bottom: 20px;
+  font-size: 4em;
+  letter-spacing: -0.02em;
+  color: white;
+  font-style: italic;
+}
+.subtitle a {
+  color: white;
+}
+
+h1.logo-name {
+  margin-bottom: 0;
+  font-size: 6em;
+  letter-spacing: -0.04em;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/cover.jpg');
+  background-color: #2b2b2b;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+}
