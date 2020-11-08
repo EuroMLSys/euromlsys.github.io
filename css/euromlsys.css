@@ -1,0 +1,26 @@
+#location {
+    width: 100%;
+}
+
+/* =============================================================================
+   SPONSORS  and  PARTNERS
+   ========================================================================== */
+   .sponsor-item,
+   .partner-item {
+     display: inline-block;
+     margin: 0 30px 30px 0;
+   }
+   .sponsor--link,
+   .partner-link {
+     display: block;
+     width: 150px;
+     height: 100px;
+     text-align: center;
+     vertical-align: middle;
+     line-height: 100px;
+     padding: 0 10px 0 10px;
+   }
+
+.footer {
+  padding: 20px 0 0 0;
+}
