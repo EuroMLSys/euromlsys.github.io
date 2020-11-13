@@ -57,3 +57,15 @@ h1.logo-name {
   background-position: center bottom;
   background-size: 100% auto;
 }
+
+.section { 
+  display: none; 
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background: #fff;
+  border-radius: 4px;
+  padding: 19px;
+  margin: 0 -20px 0;
+}
+
+.section.current { display: block; }
