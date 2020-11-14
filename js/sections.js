@@ -36,7 +36,7 @@ $(function() {
     if( window.location.hash != '' ) {
     
         // see if there is a link ID to match our hash
-        var el = $(window.location.hash);
+        var el = $("#link-" + window.location.hash.replace('#', ''));
         if( el.length > 0 ) {
             el.click();
         }
