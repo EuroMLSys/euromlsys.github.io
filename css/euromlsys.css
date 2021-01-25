@@ -58,8 +58,8 @@ h1.logo-name {
   background-size: 100% auto;
 }
 
-.section { 
-  display: none; 
+.section {
+  display: none;
   overflow: hidden;
   border: 1px solid #e7e7e7;
   background: #fff;
@@ -69,3 +69,11 @@ h1.logo-name {
 }
 
 .section.current { display: block; }
+
+s {
+  text-decoration: line-through;
+  text-decoration-line: line-through;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
