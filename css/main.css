@@ -291,10 +291,11 @@ hr {
    ========================================================================== */
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-size: 3.5em;
   font-weight: normal;
-  margin-bottom: .4em;
+  margin-bottom: .6em;
   letter-spacing: -0.02em;
 }
 h3 {
@@ -302,6 +303,9 @@ h3 {
 }
 h4 {
   font-size: 2.5em;
+}
+h5 {
+  font-size: 2em;
 }
 p {
   font-size: 1.6em;
