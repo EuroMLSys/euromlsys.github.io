@@ -86,3 +86,11 @@ s {
     display: inline-bloc;
 }
 
+.speakers-bio {
+  font-style: italic;
+}
+
+span.speakers-company {
+  display: inline;
+  font-size: 12px;
+}
