@@ -2,7 +2,7 @@ $(function() {
 
     $("#about").addClass('current');
     $("#link-about").addClass('current');
-    $(".schedule-description").hide();
+    $(".schedule-description.program").hide();
 
     //----------------------------------------------------------------------------
     // Change page "sections" when the menu item is clicked
