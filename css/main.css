@@ -432,7 +432,7 @@ nav {
 .schedule-tbl td,
 .schedule-tbl th {
   position: relative;
-  padding: 20px 30px;
+  padding: 15px 20px;
   font-size: 1.4em;
   line-height: 1.4em;
   text-align: left;
@@ -454,7 +454,6 @@ nav {
   text-align: center;
 }
 .schedule-slot {
-  width: 250px;
   font-size: 16px;
 }
 .speakers-company {
@@ -554,7 +553,7 @@ nav {
     height: 40px;
     margin-right: 5px;
   }
-  .schedule-tbl .schedule-slot {
+  .schedule-tbl {
     width: 120px;
   }
   .schedule-tbl td.schedule-slot {
@@ -837,6 +836,7 @@ nav {
 }
 .schedule-slot {
   color: #2b2b2b;
+  display: block;
 }
 .schedule-tbl tbody tr:hover {
   background: #fffde1;

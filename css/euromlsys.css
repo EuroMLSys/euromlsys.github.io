@@ -94,3 +94,23 @@ span.speakers-company {
   display: inline;
   font-size: 12px;
 }
+
+.schedule-slot {
+  color: #2b2b2b;
+  display: block;
+}
+
+.schedule-time {
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.schedule-other,
+.schedule-session {
+  background: #fffde1!important;
+}
+
+.schedule-description {
+    color: #999;
+    font-style: italic;
+}
