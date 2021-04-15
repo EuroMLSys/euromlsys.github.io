@@ -299,47 +299,47 @@
         
           <section class="schedule section" id="schedule">
             <h2 class="section-title">Program</h2>
-
+<p>Program timezone is BST (UTC+1.00).</p>
 <div class="schedule-tbl">
   <table>
     <thead>
       <tr>
-        <th class="schedule-time">Time</th>
-        <th class="schedule-slot">Slot</th>
+        <th class="schedule-time"></th>
+        <th class="schedule-slot"></th>
       </tr>
     </thead>
     <tbody>
       
         
           <tr class="schedule-other">
-            <td class="schedule-time">15h00</td>
+            <td class="schedule-time">15:00</td>
             <td class="schedule-slot">Introduction</td>
           </tr>
         
       
         
-          <tr>
-            <td class="schedule-time">15h10</td>
+          <tr class="schedule-talk">
+            <td class="schedule-time">15:10</td>
             <td class="schedule-slot">
             
             
-              Keynote 1: Zhihao Jia
+              Keynote 1: Zhihao Jia, Automated Discovery of Machine Learning Optimizations
             
               <span class="speakers-company">CMU &amp; Facebook</span>
-              <span class="schedule-description program">As an increasingly important workload, machine learning (ML) applications require different performance optimization techniques from traditional runtimes and compilers. In particular, to accelerate ML applications, it is generally necessary to perform ML computations on heterogeneous hardware and parallelize computations using multiple data dimensions, neither of which is even expressible in traditional compilers and runtimes. In this talk, I will present our recent work on automated discovery of performance optimizations to accelerate ML computations. TASO, the Tensor Algebra SuperOptimizer, optimizes the computation graphs of deep neural networks (DNNs) by automatically generating potential graph optimizations and formally verifying their correctness. TASO outperforms rule-based graph optimizers in existing ML systems (e.g., TensorFlow, TensorRT, and TVM) by up to 3x by automatically discovering novel graph optimizations, while also requiring significantly less human effort. FlexFlow is a system for accelerating distributed DNN training. FlexFlow identifies parallelization dimensions not considered in existing ML systems (e.g., TensorFlow and PyTorch) and automatically discovers fast parallelization strategies for a specific parallel machine. Companies and national labs are using FlexFlow to train production ML models that do not scale well in current ML systems, achieving over 10x performance improvement.</span>
+              <span class="schedule-description program"> As an increasingly important workload, machine learning (ML) applications require different performance optimization techniques from traditional runtimes and compilers. In particular, to accelerate ML applications, it is generally necessary to perform ML computations on heterogeneous hardware and parallelize computations using multiple data dimensions, neither of which is even expressible in traditional compilers and runtimes. In this talk, I will present our recent work on automated discovery of performance optimizations to accelerate ML computations. TASO, the Tensor Algebra SuperOptimizer, optimizes the computation graphs of deep neural networks (DNNs) by automatically generating potential graph optimizations and formally verifying their correctness. TASO outperforms rule-based graph optimizers in existing ML systems (e.g., TensorFlow, TensorRT, and TVM) by up to 3x by automatically discovering novel graph optimizations, while also requiring significantly less human effort. FlexFlow is a system for accelerating distributed DNN training. FlexFlow identifies parallelization dimensions not considered in existing ML systems (e.g., TensorFlow and PyTorch) and automatically discovers fast parallelization strategies for a specific parallel machine. Companies and national labs are using FlexFlow to train production ML models that do not scale well in current ML systems, achieving over 10x performance improvement.<br><br> Bio: Zhihao Jia is currently a research scientist at Facebook and will join CMU as an assistant professor of computer science in Fall 2021. He obtained his Ph.D. at Stanford working with Alex Aiken and Matei Zaharia. His research interests lie in the intersection of computer systems and machine learning, with a focus on building efficient, scalable, and high-performance systems for ML computations.</span>
             </td>
           </tr>
         
       
         
           <tr class="schedule-session">
-            <td class="schedule-time">15h50</td>
+            <td class="schedule-time">15:50</td>
             <td class="schedule-slot">Session 1: Systems, Compiler and PPL</td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -347,13 +347,13 @@
               DISC: A Dynamic Shape Compiler for Machine Learning Workloads
             
               <span class="speakers-company">Kai Zhu, Wenyi Zhao, Zhen Zheng, Tianyou Guo, Pengzhan Zhao, Junjie Bai, Jun Yang, Xiaoyong Liu, Lansong Diao, Wei Lin (Alibaba Group)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Many recent machine learning models show dynamic shape characteristics. However, existing AI compiler optimization systems suffer a lot from problems brought by dynamic shape models, including compilation overhead, memory usage and deployment complexity. This paper provides a compiler system to natively support optimization for dynamic shape workloads, named DISC. DISC enriches a set of IR to form a fully dynamic shape representation. It generates the runtime flow at compile time to support processing dynamic shape based logic, which avoids the interpretation overhead at runtime and enlarges the opportunity of host-device co-optimization. It addresses the kernel fusion problem of dynamic shapes with shape propagation and constraints collecting methods. This is the first work to demonstrate how to build a dynamic shape compiler based on MLIR infrastructure. Experiments show that DISC achieves up to 3.3x speedup than TensorFlow/PyTorch, and 1.8x than Nimble.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -361,13 +361,15 @@
               High-Dimensional Bayesian Optimization with Multi-Task Learning for RocksDB 
             
               <span class="speakers-company">Sami Alabed, Eiko Yoneki (University of Cambridge)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">RocksDB is a general-purpose embedded key-value store used in multiple different settings. Its versatility comes at the cost of complex tuning configurations. This paper investigates maximizing the throughput of RocksDB IO operations by auto-tuning ten parameters of varying ranges. Off-the-shelf optimizers struggle with high-dimensional problem spaces and require a large number of training samples.
+We propose two techniques to tackle this problem: multi-task modeling and dimensionality reduction through clustering. By incorporating adjacent optimization in the model, the model converged faster and found complicated settings that other tuners could not find. This approach had an additional computational complexity overhead, which we mitigated by manually assigning parameters to each sub-goal through our knowledge of RocksDB. The model is then incorporated in a standard Bayesian Optimization loop to find parameters that maximize RocksDB's IO throughput.
+Our method achieved x$1.35$ improvement when benchmarked against a workload simulation of Facebook's social graph. Furthermore, the method converged in ten optimization steps compared to other state-of-the-art methods that required fifty steps.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -375,13 +377,13 @@
               Vate: Runtime Adaptable Probabilistic Programming for Java
             
               <span class="speakers-company">Daniel Goodman, Adam Pocock, Jason Peck, Guy Steele (Oracle Labs)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Inspired by earlier work on Augur, Vate is a probabilistic programming language for the construction of JVM based probabilistic models with an Object-Oriented interface. As a compiled language it is able to examine the dependency graph of the model to produce optimised code that can be dynamically targeted to different platforms. Using Gibbs Sampling, Metropolis–Hastings and variable marginalisation it can handle a range of model types and is able to efficiently infer values, estimate probabilities, and execute models. </span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -389,27 +391,27 @@
               DistIR: An Intermediate Representation for Optimizing Distributed Neural Network
             
               <span class="speakers-company">Keshav Santhanam (Stanford University); Siddharth Krishna, Ryota Tomioka, Andrew Fitzgibbon, Tim Harris (Microsoft)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">The rapidly growing size of deep neural network (DNN) models and datasets has given rise to a variety of distribution strategies such as data, horizontal, and pipeline parallelism. However, selecting the best set of strategies for a given model and hardware configuration is challenging because debugging and testing on clusters is expensive. In this work we propose DistIR, an IR for explicitly representing distributed DNN computation that can capture many popular distribution strategies. We build an analysis framework for DistIR programs, including a simulator and reference executor that can be used to automatically search for an optimal distribution strategy. Our unified global representation also eases development of new distribution strategies, as one can reuse the lowering to per-rank backend programs. Preliminary results using a grid search over a hybrid data/horizontal/pipeline-parallel space suggest DistIR and its simulator can aid automatic DNN distribution.</span>
             </td>
           </tr>
         
       
         
           <tr class="schedule-other">
-            <td class="schedule-time">16h55</td>
+            <td class="schedule-time">16:55</td>
             <td class="schedule-slot">Break</td>
           </tr>
         
       
         
           <tr class="schedule-session">
-            <td class="schedule-time">17h05</td>
+            <td class="schedule-time">17:05</td>
             <td class="schedule-slot">Session 2: Model Optimisation and NAS</td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -417,13 +419,13 @@
               Optimizing Inference Performance of Transformers on CPUs 
             
               <span class="speakers-company">Dave Dice, Alex Kogan (Oracle Labs)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">The Transformer architecture revolutionized the field of natural language processing (NLP). Transformers-based models (e.g., BERT) power many important Web services, such as search, translation, question-answering, etc. While enormous research attention is paid to the training of those models, relatively little efforts are made to improve their inference performance. This paper comes to address this gap by presenting an empirical analysis of scalability and performance of inferencing a Transformer-based model on CPUs. Focusing on the highly popular BERT model, we identify key components of the Transformer architecture where the bulk of the computation happens, and propose an Adaptive Linear Module Optimization (ALMO) to speed them up. The optimization is evaluated using the inference benchmark from HuggingFace, and is shown to achieve the speedup of up to x1.71. Notably, ALMO does not require any changes to the implementation of the models nor affects their accuracy.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -431,13 +433,13 @@
               Learned Low Precision Graph Neural Networks
             
               <span class="speakers-company">Yiren Zhao, Duo Wang, Daniel Bates, Robert Mullins, Mateja Jamnik, Pietro Lio (The University of Cambridge)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Deep Graph Neural Networks (GNNs) show promising performance on a range of graph tasks, yet at present are costly to run and lack many of the optimisations applied to DNNs. We show, for the first time, how to systematically quantise GNNs with minimal or no loss in performance using Network Architecture Search (NAS). We investigate the novel quantisation search space of GNNs. The proposed NAS mechanism, named Low Precision Graph NAS (LPGNAS), constrains both architecture and quantisation choices to be differentiable. LPGNAS learns the optimal architecture coupled with the best quantisation strategy for different components in the GNN automatically using back-propagation in a single search round. On the citation datasets, solving the task of classifying unseen nodes in a graph, LPGNAS generates quantised models with significant reductions in both model and buffer sizes but with similar accuracy to manually designed networks and other NAS results. The reduced latency with quantisation is crucial for the speed of GNN based query answering and the smaller RAM requirements support larger batch sizes and thus a larger service throughput. In particular, on the Pubmed dataset, LPGNAS shows a better size-accuracy Pareto frontier compared to seven other manual and searched baselines, offering a 2.3x  reduction in model size and also a 0.4% increase in accuracy when compared to the best NAS competitor.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -445,13 +447,13 @@
               μNAS: Constrained Neural Architecture Search for Microcontrollers
             
               <span class="speakers-company">Edgar Liberis (University of Cambridge); Łukasz Dudziak (Samsung AI Center Cambridge); Nicholas D. Lane (University of Cambridge and Samsung AI)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">IoT devices are powered by microcontroller units (MCUs) which are extremely resource-scarce: a typical MCU may have an underpowered processor and around 64 KB of memory and persistent storage. Designing neural networks for such a platform requires an intricate balance between keeping high predictive performance (accuracy) while achieving low memory and storage usage and inference latency. This is extremely challenging to achieve manually, so in this work, we build a neural architecture search (NAS) system, called μNAS, to automate the design of such small-yet-powerful MCU-level networks. μNAS explicitly targets the three primary aspects of resource scarcity of MCUs: the size of RAM, persistent storage and processor speed. μNAS represents a significant advance in resource-efficient models, especially for “mid-tier” MCUs with memory requirements ranging from 0.5 KB to 64 KB. We show that on a variety of image classification datasets μNAS is able to (a) improve top-1 classification accuracy by up to 4.8%, or (b) reduce memory footprint by 4-13x, or (c) reduce the number of multiply-accumulate operations by at least 2x, compared to existing MCU specialist literature and resource-efficient models.        </span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -459,76 +461,48 @@
               Towards Mitigating Device Heterogeneity in Federated Learning via Adaptive Model Quantization
             
               <span class="speakers-company">Ahmed M. Abdelmoniem, Marco Canini (KAUST)</span>
-              <span class="schedule-description program"></span>
-            </td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time"></td>
-            <td class="schedule-slot">
-            
-            
-              DISC: A Dynamic Shape Compiler for Machine Learning Workloads
-            
-              <span class="speakers-company">Kai Zhu, Wenyi Zhao, Zhen Zheng, Tianyou Guo, Pengzhan Zhao, Junjie Bai, Jun Yang, Xiaoyong Liu, Lansong Diao, Wei Lin (Alibaba Group)</span>
-              <span class="schedule-description program"></span>
-            </td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td class="schedule-time"></td>
-            <td class="schedule-slot">
-            
-            
-              DISC: A Dynamic Shape Compiler for Machine Learning Workloads
-            
-              <span class="speakers-company">Kai Zhu, Wenyi Zhao, Zhen Zheng, Tianyou Guo, Pengzhan Zhao, Junjie Bai, Jun Yang, Xiaoyong Liu, Lansong Diao, Wei Lin (Alibaba Group)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">The microservice architecture allows applications to be designed in a modular format, whereby each microservice can implement a single functionality and can be independently managed and deployed. However, an undesirable side-effect of this modular design is the large state space of possibly inter-dependent configuration parameters (of the constituent microservices) which have to be tuned to improve application performance. This workshop paper investigates optimization techniques and dimensionality reduction strategies for tuning microservices applications, empirically demonstrating the significant tail latency improvements (as much as 23%) that can be achieved with configuration tuning.</span>
             </td>
           </tr>
         
       
         
           <tr class="schedule-other">
-            <td class="schedule-time">18h10</td>
+            <td class="schedule-time">18:10</td>
             <td class="schedule-slot">Break</td>
           </tr>
         
       
         
-          <tr>
-            <td class="schedule-time">18h20</td>
+          <tr class="schedule-talk">
+            <td class="schedule-time">18:20</td>
             <td class="schedule-slot">
             
             
-              Keynote 2: Anna Goldie
+              Keynote 2: Anna Goldie,  Deep Reinforcement Learning for Graph Placement: Model Parallelism and Chip Floorplanning
             
               <span class="speakers-company">Google Brain &amp; Stanford University</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Rapid progress in AI has been fueled by advances in computer systems and hardware, but with the end of Moore's Law and Dennard Scaling, it is time for AI to return the favor and transform the way in which we design systems and hardware. In this talk, I will describe two fundamental problems in computer systems, formulating each as a form of graph placement and then describing a deep reinforcement learning solution. First, I will describe our approach to device placement (model parallelism), the task of partitioning a machine learning model across multiple, heterogeneous hardware devices in order to minimize runtime for training or inference. Through repeated interactions with models running on real hardware, our RL agent implicitly learns to tradeoff load balancing and communication between the available hardware devices, and is able to achieve reductions in runtime over the best performing baselines. Next, I will discuss our work on a new domain-transferable reinforcement learning method for chip floorplanning, a long pole in chip design. Our objective is to minimize PPA (power, performance, and area), and we show that, in under 6 hours, our method can generate placements that are superhuman or comparable on modern accelerator chips, whereas the strongest baselines require human experts in the loop and can take several weeks.<br><br> Bio: Anna Goldie is a Staff Research Scientist at Google Brain and co-founder/lead of the Machine Learning for Systems Team. She is also a PhD student in the Stanford NLP Group, where she is advised by Prof. Chris Manning. At MIT, she earned a Masters / Bachelors in Computer Science, and a Bachelors in Linguistics. Her work has been covered in various media outlets, including MIT Technology Review and IEEE Spectrum.</span>
             </td>
           </tr>
         
       
         
           <tr class="schedule-other">
-            <td class="schedule-time">19h00</td>
+            <td class="schedule-time">19:00</td>
             <td class="schedule-slot">Break</td>
           </tr>
         
       
         
           <tr class="schedule-session">
-            <td class="schedule-time">19h05</td>
+            <td class="schedule-time">19:05</td>
             <td class="schedule-slot">Session 3: Scheduling, Training and Prediction</td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -536,13 +510,13 @@
               Are we there yet? Estimating Training Time for Recommendation Systems
             
               <span class="speakers-company">Iulia Paun (University of Glasgow); Yashar Moshfeghi (University of Strathclyde); Nikos Ntarmos (University of Glasgow)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Recommendation systems (RS) are a key component of modern commercial platforms, with Collaborative Filtering (CF) based RSs being the centrepiece. Relevant research has long focused on measuring and improving the effectiveness of such CF systems, but alas their efficiency -- especially with regards to their time- and resource-consuming training phase -- has received little to no attention.  This work is a first step in the direction of addressing this gap. To do so, we first perform a methodical study of the computational complexity of the training phase for a number of highly popular CF-based RSs, including approaches based on matrix factorisation, k-nearest neighbours, co-clustering, and slope one schemes. Based on this, we then build a simple yet effective predictor that, given a small sample of a dataset, is able to predict training times over the complete dataset. Our systematic experimental evaluation shows that our approach outperforms state-of-the-art regression schemes by a considerable margin.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -550,13 +524,14 @@
               Interference-Aware Scheduling for Inference Serving 
             
               <span class="speakers-company">Daniel Mendoza, Francisco Romero, Qian Li, Neeraja J. Yadwadkar, Christos Kozyrakis (Stanford University)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Machine learning inference applications have proliferated through diverse domains such as healthcare, security, and analytics. Recent work has proposed inference serving systems for improving the deployment and scalability of models. To improve resource utilization, multiple models can be co-located on the same backend machine. However, co-location can cause latency degradation due to interference and can subsequently violate latency requirements. Although interference-aware schedulers for general workloads have been introduced, they do not scale appropriately to heterogeneous inference serving systems where the number of co-location configurations grows exponentially with the number of models and machine types.
+This paper proposes an interference-aware scheduler for heterogeneous inference serving systems, reducing the latency degradation from co-location interference. We characterize the challenges in predicting the impact of co-location interference on inference latency (e.g., varying latency degradation across machine types), and identify properties of models and hardware that should be considered during scheduling. We then propose a unified prediction model that estimates an inference model's latency degradation during co-location, and develop an interference-aware scheduler that leverages this predictor. Our preliminary results show that our interference-aware scheduler achieves 2$	imes$ lower latency degradation than a commonly used least-loaded scheduler. We also discuss future research directions for interference-aware schedulers for inference serving systems.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -564,13 +539,13 @@
               Developing a Siamese Network for Intrusion Detection Systems
             
               <span class="speakers-company">Hanan Hindy (Division of Cyber Security, Abertay University Dundee, Scotland, UK); Christos Tachtatzis, Robert Atkinson (EEE Department, University of Strathclyde, Glasgow, Scotland, UK); Ethan Bayne (Division of Cyber Security, Abertay University Dundee, Scotland, UK); Xavier Bellekens (EEE Department, University of Strathclyde, Glasgow, Scotland, UK)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Machine Learning~(ML) for developing Intrusion Detection Systems (IDS) is a fast-evolving research area that has many unsolved domain challenges. Current IDS models face two challenges that limit their performance and robustness. Firstly, they require large datasets to train and their performance is highly dependent on the dataset size. Secondly, zero-day attacks demand that machine learning models are retrained in order to identify future attacks of this type. However, the sophistication and increasing rate of cyber attacks make retraining time prohibitive for practical implementation. This paper proposes a new IDS model that can learn from pair similarities rather than class discriminative features. Learning similarities requires less data for training and provides the ability to flexibly adapt to new cyber attacks, thus reducing the burden of retraining. The underlying model is based on Siamese Networks, therefore, given a number of instances, numerous similar and dissimilar pairs can be generated. The model is evaluated using three mainstream IDS datasets; CICIDS2017, KDD Cup'99, and NSL-KDD. The evaluation results confirm the ability of the Siamese Network model to suit IDS purposes by classifying cyber attacks based on similarity-based learning. This opens a new research direction for building adaptable IDS models using non-conventional ML techniques.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -578,27 +553,28 @@
               Predicting CPU Usage for Proactive Autoscaling 
             
               <span class="speakers-company">Thomas Wang, Simone Ferlin (Ericsson AB); Marco Chiesa (KTH Royal Institute of Technology)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Private and public clouds require users to specify requests for resources such as CPU and memory (RAM) to be provisioned for their applications. The values of these requests do not necessarily relate to the application's run-time requirements, but only help the cloud infrastructure resource manager to map requested resources to physical resources. If an application exceeds these values, it might be throttled or even terminated. As a consequence, requested values are often overestimated, resulting in poor resource utilization in the cloud infrastructure. Autoscaling is a technique used to overcome these problems.
+We observed that Kubernetes Vertical Pod Autoscaler (VPA) might be using an autoscaling strategy that performs poorly on workloads that periodically change. Our experimental results show that compared to VPA, predictive methods based on Holt-Winters exponential smoothing (HW) and  Long Short-Term Memory (LSTM) can decrease CPU slack by over 40% while avoiding CPU insufficiency for various CPU workloads. Furthermore, LSTM has been shown to generate stabler predictions compared to that of HW, which allowed for more robust scaling decisions.</span>
             </td>
           </tr>
         
       
         
           <tr class="schedule-other">
-            <td class="schedule-time">20h10</td>
+            <td class="schedule-time">20:10</td>
             <td class="schedule-slot">Break</td>
           </tr>
         
       
         
           <tr class="schedule-other">
-            <td class="schedule-time">20h15</td>
+            <td class="schedule-time">20:15</td>
             <td class="schedule-slot">Poster Session</td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -606,13 +582,13 @@
               Queen Jane Approximately: Enabling Efficient Neural Network Inference with Context-Adaptivity
             
               <span class="speakers-company">Octavian Machidon, Davor Sluga, Veljko Pejović (Faculty of Computer and Information Science, University of Ljubljana, Slovenia)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Recent advances in deep learning allow on-demand reduction of model complexity, without a need for re-training, thus enabling a dynamic trade-off between the inference accuracy and the energy savings. Approximate mobile computing, on the other hand, adapts the computation approximation level as the context of usage, and consequently the computation needs or result accuracy needs, vary. In this work, we propose a synergy between the two directions and develop a context-aware method for dynamically adjusting the width of an on-device neural network based on the input and context-dependent classification confidence. We implement our method on a human activity recognition neural network and through measurements on a real-world embedded device demonstrate that such a network would save up to 37.8% energy and induce only 1% loss of accuracy, if used for continuous activity monitoring in the field of elderly care.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -620,13 +596,13 @@
               DPD-InfoGAN: Differentially Private Distributed InfoGAN
             
               <span class="speakers-company">Vaikkunth Mugunthan (Massachusetts Institute of Technology); Vignesh Gokul (UCSD); Lalana Kagal (Massachusetts Institute of Technology); Shlomo Dubnov (UCSD)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Generative Adversarial Networks (GANs) are deep learning architectures capable of generating synthetic datasets. Despite producing high-quality synthetic images, the default GAN has no control over the kinds of images it generates. The Information Maximizing GAN (InfoGAN) is a variant of the default GAN that introduces feature-control variables that are automatically learned by the framework, hence providing greater control over the different kinds of images produced. Due to the high model complexity of InfoGAN, the generative distribution tends to be concentrated around the training data points. This is a critical problem as the models may inadvertently expose the sensitive and private information present in the dataset. To address this problem, we propose a differentially private version of InfoGAN (DP-InfoGAN). We also extend our framework to a distributed setting (DPD-InfoGAN) to allow clients to learn different attributes present in other clients' datasets in a privacy-preserving manner. In our experiments, we show that both DP-InfoGAN and DPD-InfoGAN can synthesize high-quality images with flexible control over image attributes while preserving privacy.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -634,13 +610,13 @@
               Towards Optimal Configuration of Microservices
             
               <span class="speakers-company">Gagan Somashekar, Anshul Gandhi (Stony Brook University)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">The microservice architecture allows applications to be designed in a modular format, whereby each microservice can implement a single functionality and can be independently managed and deployed. However, an undesirable side-effect of this modular design is the large state space of possibly inter-dependent configuration parameters (of the constituent microservices) which have to be tuned to improve application performance. This workshop paper investigates optimization techniques and dimensionality reduction strategies for tuning microservices applications, empirically demonstrating the significant tail latency improvements (as much as 23%) that can be achieved with configuration tuning.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -648,13 +624,13 @@
               AutoAblation: Automated Parallel Ablation Studies for Deep Learning
             
               <span class="speakers-company">Sina Sheikholeslami (KTH Royal Institute of Technology); Moritz Meister (Logical Clocks AB); Tianze Wang, Amir H. Payberah (KTH Royal Institute of Technology); Vladimir Vlassov (KTH Royal Institute of Techonology); Jim Dowling (KTH Royal Institute of Technology, Logical Clocks AB)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Ablation studies provide insights into the relative contribution of different architectural and regularization components to machine learning models' performance. In this paper, we introduce AutoAblation, a new framework for the design and parallel execution of ablation experiments. AutoAblation provides a declarative approach to defining ablation experiments on model architectures and training datasets, and enables the parallel execution of ablation trials. This reduces the execution time and allows more comprehensive experiments by exploiting larger amounts of computational resources. We show that AutoAblation can provide near-linear scalability by performing an ablation study on the modules of the Inception-v3 network trained on the TenGeoPSAR dataset.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -662,13 +638,13 @@
               Towards a General Framework for ML-based Self-tuning Databases
             
               <span class="speakers-company">Thomas Schmied, Diego Didona, Andreas Doering, Thomas Parnell, Nikolas Ioannou (IBM Research - Zurich)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Machine learning (ML) methods have recently emerged as an effective way to perform automated parameter tuning of databases. State-of-the-art approaches include Bayesian optimization (BO) and reinforcement learning (RL). In this work, we describe our experience when applying these methods to a database not yet studied in this context: FoundationDB. Firstly, we describe the challenges we faced, such as unknown valid ranges of configuration parameters and combinations of parameter values that result in invalid runs, and how we mitigated them. While these issues are typically overlooked, we argue that they are a crucial barrier to the adoption of ML self-tuning techniques in databases, and thus deserve more attention from the research community. Secondly, we present experimental results obtained when tuning FoundationDB using ML methods. Unlike prior work in this domain, we also compare with the simplest of baselines: random search. Our results show that, while BO and RL methods can improve the throughput of FoundationDB by up to 38%, random search is a highly competitive baseline, finding a configuration that is only 4% worse than the, vastly more complex, ML methods. We conclude that future work in this area may want to focus more on randomized, model-free optimization algorithms.</span>
             </td>
           </tr>
         
       
         
-          <tr>
+          <tr class="schedule-talk">
             <td class="schedule-time"></td>
             <td class="schedule-slot">
             
@@ -676,14 +652,14 @@
               Fast Optimisation of Convolutional Neural Network Inference using System Performance Models
             
               <span class="speakers-company">Rik Mulder (University of Edinburgh); Valentin Radu (University of Sheffield); Christophe Dubach (McGill University)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">The choice of convolutional routines (or primitives) for implementing the operations in a Convolutional Neural Network (CNN) has a tremendous impact over the inference time. To optimise the execution latency for a target system, a lengthy profiling stage is needed – iterating over all the implementations of convolutional primitives in the configuration of each layer to measure their execution time on that platform. Each primitive exercises the system resources in different ways, so new profiling is currently needed when optimising for another system. In this work, we replace this prohibitively expensive profiling stage with a machine learning based approach of performance modelling. Our approach drastically speeds up the optimisation by estimating the latency of convolutional primitives in any layer configuration running on a target system. We reduce the time needed for optimising the execution of large neural networks on an ARM Cortex-A73 system from hours to just seconds. Our performance model is easily transferable across target platforms. This is demonstrated by training a performance model on an Intel platform and transferring its predictive performance to AMD and ARM systems, using very few profiled samples from the target platforms for fine-tuning the performance model.</span>
             </td>
           </tr>
         
       
         
           <tr class="schedule-other">
-            <td class="schedule-time">20h50</td>
+            <td class="schedule-time">20:50</td>
             <td class="schedule-slot">Wrapup</td>
           </tr>
         
@@ -708,7 +684,7 @@
 
     <h3 class="speech-title">
       
-      <span class="speech-time">15h10</span>
+      <span class="speech-time">15:10</span>
       
       <span>Zhihao Jia</span>
       <span class="speakers-company">CMU &amp; Facebook</span>
@@ -730,17 +706,17 @@
 
     <h3 class="speech-title">
       
-      <span class="speech-time">18h20</span>
+      <span class="speech-time">18:20</span>
       
       <span>Anna Goldie</span>
       <span class="speakers-company">Google Brain &amp; Stanford University</span>
     </h3>
 
-    <h3 class="speakers-name">Details comming soon
+    <h3 class="speakers-name">Deep Reinforcement Learning for Graph Placement: Model Parallelism and Chip Floorplanning
       
     </h3>
-    <p class="schedule-description">...</p>
-    <p class="speakers-bio"></p>
+    <p class="schedule-description">Rapid progress in AI has been fueled by advances in computer systems and hardware, but with the end of Moore&#39;s Law and Dennard Scaling, it is time for AI to return the favor and transform the way in which we design systems and hardware. In this talk, I will describe two fundamental problems in computer systems, formulating each as a form of graph placement and then describing a deep reinforcement learning solution. First, I will describe our approach to device placement (model parallelism), the task of partitioning a machine learning model across multiple, heterogeneous hardware devices in order to minimize runtime for training or inference. Through repeated interactions with models running on real hardware, our RL agent implicitly learns to tradeoff load balancing and communication between the available hardware devices, and is able to achieve reductions in runtime over the best performing baselines. Next, I will discuss our work on a new domain-transferable reinforcement learning method for chip floorplanning, a long pole in chip design. Our objective is to minimize PPA (power, performance, and area), and we show that, in under 6 hours, our method can generate placements that are superhuman or comparable on modern accelerator chips, whereas the strongest baselines require human experts in the loop and can take several weeks.</p>
+    <p class="speakers-bio">Anna Goldie is a Staff Research Scientist at Google Brain and co-founder/lead of the Machine Learning for Systems Team. She is also a PhD student in the Stanford NLP Group, where she is advised by Prof. Chris Manning. At MIT, she earned a Masters / Bachelors in Computer Science, and a Bachelors in Linguistics. Her work has been covered in various media outlets, including MIT Technology Review and IEEE Spectrum.</p>
   </li>
 
 </ul>

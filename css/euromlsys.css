@@ -114,3 +114,11 @@ span.speakers-company {
     color: #999;
     font-style: italic;
 }
+
+.program {
+  padding-top: 5px;
+  cursor: pointer;
+}
+.schedule-talk {
+  cursor: pointer;
+}
