@@ -568,6 +568,13 @@ nav {
   .schedule-tbl td.schedule-description {
     font-size: 12px;
   }
+
+  .schedule-tbl .schedule-resources {
+    width: 60px;
+    padding: 10px 0 10px 5px;
+    text-align: left;
+  }
+
   /* partners */
   .sponsor-item,
   .partner-item {
