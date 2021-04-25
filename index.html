@@ -355,7 +355,7 @@
 			  </span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/MA-pIT-fZAg" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458838" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -374,7 +374,7 @@ We propose two techniques to tackle this problem: multi-task modeling and dimens
 Our method achieved x$1.35$ improvement when benchmarked against a workload simulation of Facebook's social graph. Furthermore, the method converged in ten optimization steps compared to other state-of-the-art methods that required fifty steps.</span>
             </td>
 			 <td class="schedule-resources"><a href="https://youtu.be/AwVw3s5wUcU" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458841" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -391,7 +391,7 @@ Our method achieved x$1.35$ improvement when benchmarked against a workload simu
               <span class="schedule-description program">Inspired by earlier work on Augur, Vate is a probabilistic programming language for the construction of JVM based probabilistic models with an Object-Oriented interface. As a compiled language it is able to examine the dependency graph of the model to produce optimised code that can be dynamically targeted to different platforms. Using Gibbs Sampling, Metropolis–Hastings and variable marginalisation it can handle a range of model types and is able to efficiently infer values, estimate probabilities, and execute models. </span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/oG_SNeLWq4I" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458835" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -408,7 +408,7 @@ Our method achieved x$1.35$ improvement when benchmarked against a workload simu
               <span class="schedule-description program">The rapidly growing size of deep neural network (DNN) models and datasets has given rise to a variety of distribution strategies such as data, horizontal, and pipeline parallelism. However, selecting the best set of strategies for a given model and hardware configuration is challenging because debugging and testing on clusters is expensive. In this work we propose DistIR, an IR for explicitly representing distributed DNN computation that can capture many popular distribution strategies. We build an analysis framework for DistIR programs, including a simulator and reference executor that can be used to automatically search for an optimal distribution strategy. Our unified global representation also eases development of new distribution strategies, as one can reuse the lowering to per-rank backend programs. Preliminary results using a grid search over a hybrid data/horizontal/pipeline-parallel space suggest DistIR and its simulator can aid automatic DNN distribution.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/vapb4vPLSWY" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://cs.stanford.edu/~keshav2/dist_ir.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458829" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -441,7 +441,7 @@ Our method achieved x$1.35$ improvement when benchmarked against a workload simu
               <span class="schedule-description program">The Transformer architecture revolutionized the field of natural language processing (NLP). Transformers-based models (e.g., BERT) power many important Web services, such as search, translation, question-answering, etc. While enormous research attention is paid to the training of those models, relatively little efforts are made to improve their inference performance. This paper comes to address this gap by presenting an empirical analysis of scalability and performance of inferencing a Transformer-based model on CPUs. Focusing on the highly popular BERT model, we identify key components of the Transformer architecture where the bulk of the computation happens, and propose an Adaptive Linear Module Optimization (ALMO) to speed them up. The optimization is evaluated using the inference benchmark from HuggingFace, and is shown to achieve the speedup of up to x1.71. Notably, ALMO does not require any changes to the implementation of the models nor affects their accuracy.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/nv7d_cd-YVU" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="pub/dice21euromlsys.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -458,7 +458,7 @@ Our method achieved x$1.35$ improvement when benchmarked against a workload simu
               <span class="schedule-description program">Deep Graph Neural Networks (GNNs) show promising performance on a range of graph tasks, yet at present are costly to run and lack many of the optimisations applied to DNNs. We show, for the first time, how to systematically quantise GNNs with minimal or no loss in performance using Network Architecture Search (NAS). We investigate the novel quantisation search space of GNNs. The proposed NAS mechanism, named Low Precision Graph NAS (LPGNAS), constrains both architecture and quantisation choices to be differentiable. LPGNAS learns the optimal architecture coupled with the best quantisation strategy for different components in the GNN automatically using back-propagation in a single search round. On the citation datasets, solving the task of classifying unseen nodes in a graph, LPGNAS generates quantised models with significant reductions in both model and buffer sizes but with similar accuracy to manually designed networks and other NAS results. The reduced latency with quantisation is crucial for the speed of GNN based query answering and the smaller RAM requirements support larger batch sizes and thus a larger service throughput. In particular, on the Pubmed dataset, LPGNAS shows a better size-accuracy Pareto frontier compared to seven other manual and searched baselines, offering a 2.3x  reduction in model size and also a 0.4% increase in accuracy when compared to the best NAS competitor.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/o-5EfPkCULw" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://arxiv.org/abs/2009.09232" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="pub/zhao21euromlsys.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -474,8 +474,8 @@ Our method achieved x$1.35$ improvement when benchmarked against a workload simu
               <span class="speakers-company">Edgar Liberis (University of Cambridge); Łukasz Dudziak (Samsung AI Center Cambridge); Nicholas D. Lane (University of Cambridge and Samsung AI)</span>
               <span class="schedule-description program">IoT devices are powered by microcontroller units (MCUs) which are extremely resource-scarce: a typical MCU may have an underpowered processor and around 64 KB of memory and persistent storage. Designing neural networks for such a platform requires an intricate balance between keeping high predictive performance (accuracy) while achieving low memory and storage usage and inference latency. This is extremely challenging to achieve manually, so in this work, we build a neural architecture search (NAS) system, called μNAS, to automate the design of such small-yet-powerful MCU-level networks. μNAS explicitly targets the three primary aspects of resource scarcity of MCUs: the size of RAM, persistent storage and processor speed. μNAS represents a significant advance in resource-efficient models, especially for “mid-tier” MCUs with memory requirements ranging from 0.5 KB to 64 KB. We show that on a variety of image classification datasets μNAS is able to (a) improve top-1 classification accuracy by up to 4.8%, or (b) reduce memory footprint by 4-13x, or (c) reduce the number of multiply-accumulate operations by at least 2x, compared to existing MCU specialist literature and resource-efficient models.        </span>
             </td>
-			  <td class="schedule-resources"><a href="" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://arxiv.org/abs/2010.14246" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <td class="schedule-resources"><a href="https://youtu.be/KD0rNT_2p-4" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458836" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -492,7 +492,7 @@ Our method achieved x$1.35$ improvement when benchmarked against a workload simu
               <span class="schedule-description program">The microservice architecture allows applications to be designed in a modular format, whereby each microservice can implement a single functionality and can be independently managed and deployed. However, an undesirable side-effect of this modular design is the large state space of possibly inter-dependent configuration parameters (of the constituent microservices) which have to be tuned to improve application performance. This workshop paper investigates optimization techniques and dimensionality reduction strategies for tuning microservices applications, empirically demonstrating the significant tail latency improvements (as much as 23%) that can be achieved with configuration tuning.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/B2WdDzUfVMQ" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://mcanini.github.io/papers/aqfl.euromlsys21.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458839" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -548,7 +548,7 @@ Our method achieved x$1.35$ improvement when benchmarked against a workload simu
               <span class="schedule-description program">Recommendation systems (RS) are a key component of modern commercial platforms, with Collaborative Filtering (CF) based RSs being the centrepiece. Relevant research has long focused on measuring and improving the effectiveness of such CF systems, but alas their efficiency -- especially with regards to their time- and resource-consuming training phase -- has received little to no attention.  This work is a first step in the direction of addressing this gap. To do so, we first perform a methodical study of the computational complexity of the training phase for a number of highly popular CF-based RSs, including approaches based on matrix factorisation, k-nearest neighbours, co-clustering, and slope one schemes. Based on this, we then build a simple yet effective predictor that, given a small sample of a dataset, is able to predict training times over the complete dataset. Our systematic experimental evaluation shows that our approach outperforms state-of-the-art regression schemes by a considerable margin.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/6m4kc5cWR0k" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458832" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -566,7 +566,7 @@ Our method achieved x$1.35$ improvement when benchmarked against a workload simu
 This paper proposes an interference-aware scheduler for heterogeneous inference serving systems, reducing the latency degradation from co-location interference. We characterize the challenges in predicting the impact of co-location interference on inference latency (e.g., varying latency degradation across machine types), and identify properties of models and hardware that should be considered during scheduling. We then propose a unified prediction model that estimates an inference model's latency degradation during co-location, and develop an interference-aware scheduler that leverages this predictor. Our preliminary results show that our interference-aware scheduler achieves 2$	imes$ lower latency degradation than a commonly used least-loaded scheduler. We also discuss future research directions for interference-aware schedulers for inference serving systems.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/S1Jg_KnU2SU" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://drive.google.com/file/d/1FZjN5y73MuOrxkspqZqE8rdh07ms3laO/view?usp=sharing" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458837" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -583,7 +583,7 @@ This paper proposes an interference-aware scheduler for heterogeneous inference 
               <span class="schedule-description program">Machine Learning~(ML) for developing Intrusion Detection Systems (IDS) is a fast-evolving research area that has many unsolved domain challenges. Current IDS models face two challenges that limit their performance and robustness. Firstly, they require large datasets to train and their performance is highly dependent on the dataset size. Secondly, zero-day attacks demand that machine learning models are retrained in order to identify future attacks of this type. However, the sophistication and increasing rate of cyber attacks make retraining time prohibitive for practical implementation. This paper proposes a new IDS model that can learn from pair similarities rather than class discriminative features. Learning similarities requires less data for training and provides the ability to flexibly adapt to new cyber attacks, thus reducing the burden of retraining. The underlying model is based on Siamese Networks, therefore, given a number of instances, numerous similar and dissimilar pairs can be generated. The model is evaluated using three mainstream IDS datasets; CICIDS2017, KDD Cup'99, and NSL-KDD. The evaluation results confirm the ability of the Siamese Network model to suit IDS purposes by classifying cyber attacks based on similarity-based learning. This opens a new research direction for building adaptable IDS models using non-conventional ML techniques.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/Nkj5b1gKVbM" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458842" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -601,7 +601,7 @@ This paper proposes an interference-aware scheduler for heterogeneous inference 
 We observed that Kubernetes Vertical Pod Autoscaler (VPA) might be using an autoscaling strategy that performs poorly on workloads that periodically change. Our experimental results show that compared to VPA, predictive methods based on Holt-Winters exponential smoothing (HW) and  Long Short-Term Memory (LSTM) can decrease CPU slack by over 40% while avoiding CPU insufficiency for various CPU workloads. Furthermore, LSTM has been shown to generate stabler predictions compared to that of HW, which allowed for more robust scaling decisions.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/wElN5K6a2b8" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://www.researchgate.net/publication/350290837_Predicting_CPU_Usage_for_Proactive_Autoscaling" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458831" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -634,7 +634,7 @@ We observed that Kubernetes Vertical Pod Autoscaler (VPA) might be using an auto
               <span class="schedule-description program">Recent advances in deep learning allow on-demand reduction of model complexity, without a need for re-training, thus enabling a dynamic trade-off between the inference accuracy and the energy savings. Approximate mobile computing, on the other hand, adapts the computation approximation level as the context of usage, and consequently the computation needs or result accuracy needs, vary. In this work, we propose a synergy between the two directions and develop a context-aware method for dynamically adjusting the width of an on-device neural network based on the input and context-dependent classification confidence. We implement our method on a human activity recognition neural network and through measurements on a real-world embedded device demonstrate that such a network would save up to 37.8% energy and induce only 1% loss of accuracy, if used for continuous activity monitoring in the field of elderly care.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/Uq-_lIzoTJU" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="http://lrss.fri.uni-lj.si/Veljko/docs/Machidon2021SNN.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458833" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -650,8 +650,8 @@ We observed that Kubernetes Vertical Pod Autoscaler (VPA) might be using an auto
               <span class="speakers-company">Vaikkunth Mugunthan (Massachusetts Institute of Technology); Vignesh Gokul (UCSD); Lalana Kagal (Massachusetts Institute of Technology); Shlomo Dubnov (UCSD)</span>
               <span class="schedule-description program">Generative Adversarial Networks (GANs) are deep learning architectures capable of generating synthetic datasets. Despite producing high-quality synthetic images, the default GAN has no control over the kinds of images it generates. The Information Maximizing GAN (InfoGAN) is a variant of the default GAN that introduces feature-control variables that are automatically learned by the framework, hence providing greater control over the different kinds of images produced. Due to the high model complexity of InfoGAN, the generative distribution tends to be concentrated around the training data points. This is a critical problem as the models may inadvertently expose the sensitive and private information present in the dataset. To address this problem, we propose a differentially private version of InfoGAN (DP-InfoGAN). We also extend our framework to a distributed setting (DPD-InfoGAN) to allow clients to learn different attributes present in other clients' datasets in a privacy-preserving manner. In our experiments, we show that both DP-InfoGAN and DPD-InfoGAN can synthesize high-quality images with flexible control over image attributes while preserving privacy.</span>
             </td>
-			  <td class="schedule-resources"><a href="" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://arxiv.org/pdf/2010.11398.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <td class="schedule-resources"><a href="https://youtu.be/FNodW1NYclA" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458826" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -667,8 +667,8 @@ We observed that Kubernetes Vertical Pod Autoscaler (VPA) might be using an auto
               <span class="speakers-company">Gagan Somashekar, Anshul Gandhi (Stony Brook University)</span>
               <span class="schedule-description program">The microservice architecture allows applications to be designed in a modular format, whereby each microservice can implement a single functionality and can be independently managed and deployed. However, an undesirable side-effect of this modular design is the large state space of possibly inter-dependent configuration parameters (of the constituent microservices) which have to be tuned to improve application performance. This workshop paper investigates optimization techniques and dimensionality reduction strategies for tuning microservices applications, empirically demonstrating the significant tail latency improvements (as much as 23%) that can be achieved with configuration tuning.</span>
             </td>
-			  <td class="schedule-resources"><a href="" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://www3.cs.stonybrook.edu/~anshul/euromlsys21_opt.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <td class="schedule-resources"><a href="https://youtu.be/3ITvavybx6U" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458828" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -685,7 +685,7 @@ We observed that Kubernetes Vertical Pod Autoscaler (VPA) might be using an auto
               <span class="schedule-description program">Ablation studies provide insights into the relative contribution of different architectural and regularization components to machine learning models' performance. In this paper, we introduce AutoAblation, a new framework for the design and parallel execution of ablation experiments. AutoAblation provides a declarative approach to defining ablation experiments on model architectures and training datasets, and enables the parallel execution of ablation trials. This reduces the execution time and allows more comprehensive experiments by exploiting larger amounts of computational resources. We show that AutoAblation can provide near-linear scalability by performing an ablation study on the modules of the Inception-v3 network trained on the TenGeoPSAR dataset.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/zKrj4zd8B-E" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://dcatkth.github.io/papers/autoablation.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458834" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -702,7 +702,7 @@ We observed that Kubernetes Vertical Pod Autoscaler (VPA) might be using an auto
               <span class="schedule-description program">Machine learning (ML) methods have recently emerged as an effective way to perform automated parameter tuning of databases. State-of-the-art approaches include Bayesian optimization (BO) and reinforcement learning (RL). In this work, we describe our experience when applying these methods to a database not yet studied in this context: FoundationDB. Firstly, we describe the challenges we faced, such as unknown valid ranges of configuration parameters and combinations of parameter values that result in invalid runs, and how we mitigated them. While these issues are typically overlooked, we argue that they are a crucial barrier to the adoption of ML self-tuning techniques in databases, and thus deserve more attention from the research community. Secondly, we present experimental results obtained when tuning FoundationDB using ML methods. Unlike prior work in this domain, we also compare with the simplest of baselines: random search. Our results show that, while BO and RL methods can improve the throughput of FoundationDB by up to 38%, random search is a highly competitive baseline, finding a configuration that is only 4% worse than the, vastly more complex, ML methods. We conclude that future work in this area may want to focus more on randomized, model-free optimization algorithms.</span>
             </td>
 			  <td class="schedule-resources"><a href="https://youtu.be/uLM48VSBoIs" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458830" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
@@ -718,8 +718,8 @@ We observed that Kubernetes Vertical Pod Autoscaler (VPA) might be using an auto
               <span class="speakers-company">Rik Mulder (University of Edinburgh); Valentin Radu (University of Sheffield); Christophe Dubach (McGill University)</span>
               <span class="schedule-description program">The choice of convolutional routines (or primitives) for implementing the operations in a Convolutional Neural Network (CNN) has a tremendous impact over the inference time. To optimise the execution latency for a target system, a lengthy profiling stage is needed – iterating over all the implementations of convolutional primitives in the configuration of each layer to measure their execution time on that platform. Each primitive exercises the system resources in different ways, so new profiling is currently needed when optimising for another system. In this work, we replace this prohibitively expensive profiling stage with a machine learning based approach of performance modelling. Our approach drastically speeds up the optimisation by estimating the latency of convolutional primitives in any layer configuration running on a target system. We reduce the time needed for optimising the execution of large neural networks on an ARM Cortex-A73 system from hours to just seconds. Our performance model is easily transferable across target platforms. This is demonstrated by training a performance model on an Intel platform and transferring its predictive performance to AMD and ARM systems, using very few profiled samples from the target platforms for fine-tuning the performance model.</span>
             </td>
-			  <td class="schedule-resources"><a href="" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
-			  <a href="https://vradu.uk/publications/euromlsys_2021.pdf" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
+			  <td class="schedule-resources"><a href="https://youtu.be/T19VYuamWN8" target="_blank"><img src="img/video.png" height="20" valign="middle"> Video</a><br/>
+			  <a href="https://dl.acm.org/doi/10.1145/3437984.3458840" target="_blank"><img src="img/paper.png" height="20" valign="middle"> Paper</a>
 			  </td>
           </tr>
         
