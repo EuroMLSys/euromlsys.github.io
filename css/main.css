@@ -568,14 +568,6 @@ nav {
   .schedule-tbl td.schedule-description {
     font-size: 12px;
   }
-
-  .schedule-tbl .schedule-resources {
-    width: 80px;
-    padding: 10px 0 10px 5px;
-    text-align: left;
-    font-size: 12px;
-  }
-
   /* partners */
   .sponsor-item,
   .partner-item {
@@ -839,14 +831,6 @@ nav {
 .schedule-tbl .speaker-photo .photo {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
 }
-
-.schedule-tbl .schedule-resources {
-    width: 110px;
-    padding: 10px 0 10px 5px;
-    text-align: left;
-    font-size: 12px;
-}
-
 .speakers-company {
   color: #999;
 }
