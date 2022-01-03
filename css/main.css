@@ -594,10 +594,15 @@ nav {
 @media only screen and (max-width: 480px) {
   /* nav */
   nav {
-    display: none;
+    display: block;
+  }
+  .nav-item {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px;
   }
   .header {
-    padding: 20px 0;
+    padding: 80px 0;
   }
   .logo-name {
     font-size: 4em;
