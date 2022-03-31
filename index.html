@@ -1,7 +1,7 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/Event">
 <head>
-	<meta name="generator" content="Hugo 0.96.0" />
+	<meta name="generator" content="Hugo 0.54.0" />
   <title itemprop="name">The 2nd Workshop on Machine Learning and Systems (EuroMLSys)</title>
 
   <meta charset="utf-8">
@@ -13,7 +13,9 @@
   <meta property="og:title" content="The 2nd Workshop on Machine Learning and Systems (EuroMLSys)" />
 <meta property="og:description" content="The 2nd Workshop on Machine Learning and Systems (EuroMLSys)" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://euromlsys.github.io/" /><meta property="og:image" content="https://euromlsys.github.io/img/euromlsys.png"/>
+<meta property="og:url" content="https://euromlsys.github.io/" />
+
+<meta property="og:image" content="https://euromlsys.github.io/img/euromlsys.png" />
 
 
   <meta name="twitter:card" content="summary_large_image"/>
@@ -225,12 +227,12 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
 <p>
 <ul class="list">
   <li>
-    <b>"Efficient Multi-Class Classification with Duet"</b> —
+    <b>"Efficient Multiclass Classification with Duet"</b> —
     <i>Shay Vargaftik, Yaniv Ben-Itzhak (VMware Research)</i>
   </li>
   <br>
   <li>
-    <b>"Deep learning on microcontrollers: a study on deployment costs and challenges"</b> —
+    <b>"Deep Learning on Microcontrollers: A Study on Deployment Costs and Challenges"</b> —
     <i>Filip Svoboda (University of Cambridge); JAVIER FERNANDEZ-MARQUES (University of Oxford); EDGAR LIBERIS, NICHOLAS LANE (University of Cambridge)</i>
   </li>
   <br>
@@ -260,7 +262,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
   </li>
   <br>
   <li>
-    <b>"On the Impact of Device and Behavioral Heterogeneity in Federated Learning"</b> —
+    <b>"Empirical Analysis of Federated Learning in Heterogeneous Environments"</b> —
     <i>Ahmed M. Abdelmoniem (Queen Mary University of London); Chen-Yu Ho, Pantelis Papageorgiou, Marco Canini (KAUST)</i>
   </li>
   <br>
@@ -287,7 +289,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
   </li>
   <br>
   <li>
-    <b>"Scaling Knowledge Graph Embedding Models"</b> —
+    <b>"Scaling Knowledge Graph Embedding Models for Link Prediction"</b> —
     <i>Nasrullah Sheikh, Xiao Qin, Berthold Reinwald (IBM Research Almaden); Chuan Lei (Instacart)</i>
   </li>
   <br>
@@ -318,6 +320,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
         
           <section class="schedule section" id="schedule">
             <h2 class="section-title">Program</h2>
+<p>If you want to join the euromlsys22 slack, please email to <a href="mailto:sa894@cam.ac.uk">Sami Alabed</a> with subject line ‘join euromlsys22 slack’.</p>
 <p>Program timezone is CEST (UTC+2.00).</p>
 <div class="schedule-tbl">
   <table>
@@ -356,7 +359,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             <td class="schedule-slot">
             
             
-              Scaling Knowledge Graph Embedding Models
+              Scaling Knowledge Graph Embedding Models for Link Prediction
             
               <span class="speakers-company">Nasrullah Sheikh, Xiao Qin, Berthold Reinwald (IBM Research Almaden); Chuan Lei (Instacart)</span>
               <span class="schedule-description program">Developing scalable solutions for training Graph Neural Networks (GNNs) for link prediction tasks is challenging due to the high data dependencies which entail high computational cost and huge memory footprint. We propose a new method for scaling training of knowledge graph embedding models for link prediction to address these challenges. Towards this end, we propose the following algorithmic strategies: self-sufficient partitions, constraint-based negative sampling, and edge mini-batch training. Both, partitioning strategy and constraint-based negative sampling, avoid cross partition data transfer during training. In our experimental evaluation, we show that our scaling solution for GNN-based knowledge graph embedding models achieves a 16x speed up on benchmark datasets while maintaining a comparable model performance as non-distributed methods on standard metrics.</span>
@@ -447,10 +450,10 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             <td class="schedule-slot">
             
             
-              Efficient Multi-Class Classification with Duet
+              Efficient Multiclass Classification with Duet
             
               <span class="speakers-company">Shay Vargaftik, Yaniv Ben-Itzhak (VMware Research)</span>
-              <span class="schedule-description program">Accordingly, we propose a new classifier termed Duet. Duet incorporates the advantages of bagging and boosting decision-tree-based ensemble methods (DTEMs) by using two classifiers instead of a monolithic one. A simple bagging model is trained using the entire training dataset and is responsible for capturing the easier concepts. Then, a boosting model is trained using only a fraction of the dataset representing the concepts the bagging model finds hard. To make the whole process resource efficient, we develop a new heuristic approach to rank data with respect to concepts that the bagging model finds hard. We use this approach, termed data instance predictability to determine the dataset fraction for the boosting model training. We implement Duet as a scikit-learn classifier. Evaluation using datasets from different domains and with different characteristics indicates that Duet offers a better tradeoff between classification accuracy and system performance than monolithic DTEMs. Moreover, in an evaluation over a resource-constrained Raspberry Pi 3 device Duet successfully completes all training tasks, where some monolithic models fail due to insufficient resources, indicating broader applicability of Duet to resource-constrained edge devices. Duet is a part of an effort for advancements in resource-efficient classification, and its scikit-learn implementation can be found in https://research.vmware.com/projects/efficient-machine-learning-classification. </span>
+              <span class="schedule-description program">In the upcoming era of edge computing, the capability to perform fast training and classification at the edge is an increasing need due to limited connectivity, hardware resources, privacy concerns, profitability, and more. Accordingly, we propose a new classifier termed Duet. Duet incorporates the advantages of bagging and boosting decision-tree-based ensemble methods (DTEMs) by using two classifiers instead of a monolithic one. A simple bagging model is trained using the entire training dataset and is responsible for capturing the easier concepts. Then, a boosting model is trained using only a fraction of the dataset representing the concepts the bagging model finds hard. To make the whole process resource efficient, we develop a new heuristic approach to rank data with respect to concepts that the bagging model finds hard. We use this approach, termed data instance predictability to determine the dataset fraction for the boosting model training. We implement Duet as a scikit-learn classifier. Evaluation using datasets from different domains and with different characteristics indicates that Duet offers a better tradeoff between classification accuracy and system performance than monolithic DTEMs. Moreover, in an evaluation over a resource-constrained Raspberry Pi 3 device Duet successfully completes all training tasks, where some monolithic models fail due to insufficient resources, indicating broader applicability of Duet to resource-constrained edge devices. Duet is a part of an effort for advancements in resource-efficient classification, and its scikit-learn implementation can be found in https://research.vmware.com/projects/efficient-machine-learning-classification. </span>
             </td>
           </tr>
         
@@ -461,7 +464,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             <td class="schedule-slot">
             
             
-              Deep learning on microcontrollers: a study on deployment costs and challenges
+              Deep Learning on Microcontrollers: A Study on Deployment Costs and Challenges
             
               <span class="speakers-company">Filip Svoboda (University of Cambridge); JAVIER FERNANDEZ-MARQUES (University of Oxford); EDGAR LIBERIS, NICHOLAS LANE (University of Cambridge)</span>
               <span class="schedule-description program">Deep learning on resource-constrained hardware has become more viable in recent years due to the development of lightweight architectures and compression techniques. Mobile devices are a particularly popular target platform for which major deep learning frameworks offer a streamlined model deployment pipeline. Still, it is possible to run deep neural networks (DNNs) in an even more constrained environment, namely on microcontrollers (MCUs). Microcontrollers are an attractive deployment target due to their low cost, modest power usage and abundance in the wild. However, deploying models to such hardware is non-trivial due to a small amount of on-chip RAM (often < 512KB) and limited compute capabilities. In this work, we delve into the requirements and challenges of fast DNN inference on MCUs: we describe how the memory hierarchy influences the architecture of the model, expose often under-reported costs of compression and quantization techniques, and highlight issues that become critical when deploying to MCUs compared to mobiles. Our findings and experiences are also distilled into a set of guidelines that should ease the future deployment of DNN-based applications on microcontrollers.</span>
@@ -581,7 +584,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             <td class="schedule-slot">
             
             
-              On the Impact of Device and Behavioral Heterogeneity in Federated Learning
+              Empirical Analysis of Federated Learning in Heterogeneous Environments
             
               <span class="speakers-company">Ahmed M. Abdelmoniem (Queen Mary University of London); Chen-Yu Ho, Pantelis Papageorgiou, Marco Canini (KAUST)</span>
               <span class="schedule-description program">Federated learning (FL) is becoming a popular paradigm for collaborative learning over distributed, private datasets owned by non-trusting entities. FL has seen successful deployment in production environments, and it has been adopted in services such as virtual keyboards, auto-completion, item recommendation, and several IoT applications. However, FL comes with the challenge of performing training over largely heterogeneous datasets, devices, and networks that are out of the control of the centralized FL server. Motivated by this inherent setting, we make a first step towards characterizing the impact of device and behavioral heterogeneity on the trained model. We conduct an extensive empirical study spanning close to 1.5K unique configurations on five popular FL benchmarks. Our analysis shows that these sources of heterogeneity have a major impact on both model performance and fairness, thus shedding light on the importance of considering heterogeneity in FL system design.</span>
