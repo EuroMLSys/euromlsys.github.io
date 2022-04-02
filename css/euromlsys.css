@@ -122,3 +122,7 @@ span.speakers-company {
 .schedule-talk {
   cursor: pointer;
 }
+.schedule-talk .schedule-slot {
+  min-height: 45px;
+}
+

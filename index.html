@@ -320,6 +320,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
         
           <section class="schedule section" id="schedule">
             <h2 class="section-title">Program</h2>
+<p><b>EuroMLSys'22 Proceedings are available on <a href="https://dl.acm.org/doi/proceedings/10.1145/3517207" target="_blank">ACM Digital Library</a></b></p>
 <p>If you want to join the euromlsys22 slack, please email to <a href="mailto:sa894@cam.ac.uk">Sami Alabed</a> with subject line ‘join euromlsys22 slack’.</p>
 <p>Program timezone is CEST (UTC+2.00).</p>
 <div class="schedule-tbl">
@@ -336,6 +337,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-other">
             <td class="schedule-time">09:00</td>
             <td class="schedule-slot">Poster Session</td>
+            <td></td>
           </tr>
         
       
@@ -347,9 +349,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               dSyncPS: Delayed Synchronization for Dynamic Deployment of Distributed Machine
             
-              <span class="speakers-company">Yibo Guo, An Wang (Case Western Reserve University)</span>
+              <span class="speakers-company">Yibo Guo*, An Wang (Case Western Reserve University)</span>
               <span class="schedule-description program">The increasing demand of applying machine learning technologies in various domains has driven the evolvement of complex machine learning models. To fulfill this demand, distributed machine learning has become the de facto standard computing paradigm for model training. Machine-Learning-as-a-Service (MLaaS) has also emerged as a solution provided by cloud service providers to address this need. With MLaaS, customers can submit their models and training datasets to the service providers, and leverage the existing cloud infrastructure for model training and inference. However, we find that existing solutions are insufficient for end users who requires complex and accurate machine learning models, but with moderate amount of data. The main issue is the lack of support for dynamic deployment of distributed machine learning tasks. To address this issue, we propose a parameter server based framework, called dSyncPS, that allows worker nodes to participate in training dynamically. The key idea is that it separates parameter synchronization from aggregation function in the parameter server nodes, thus resulting in a delayed synchrony.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=xL_dYIkgGLE" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final19.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -361,9 +369,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Scaling Knowledge Graph Embedding Models for Link Prediction
             
-              <span class="speakers-company">Nasrullah Sheikh, Xiao Qin, Berthold Reinwald (IBM Research Almaden); Chuan Lei (Instacart)</span>
+              <span class="speakers-company">Nasrullah Sheikh*, Xiao Qin, Berthold Reinwald (IBM Research Almaden); Chuan Lei (Instacart)</span>
               <span class="schedule-description program">Developing scalable solutions for training Graph Neural Networks (GNNs) for link prediction tasks is challenging due to the high data dependencies which entail high computational cost and huge memory footprint. We propose a new method for scaling training of knowledge graph embedding models for link prediction to address these challenges. Towards this end, we propose the following algorithmic strategies: self-sufficient partitions, constraint-based negative sampling, and edge mini-batch training. Both, partitioning strategy and constraint-based negative sampling, avoid cross partition data transfer during training. In our experimental evaluation, we show that our scaling solution for GNN-based knowledge graph embedding models achieves a 16x speed up on benchmark datasets while maintaining a comparable model performance as non-distributed methods on standard metrics.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=YR4UAukZNh8" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final9.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -375,9 +389,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Data Selection for Efficient Model Update in Federated Learning
             
-              <span class="speakers-company">Hongrui Shi, Valentin Radu (University of Sheffield)</span>
+              <span class="speakers-company">Hongrui Shi*, Valentin Radu (University of Sheffield)</span>
               <span class="schedule-description program">The Federated Learning workflow of training a centralized model with distributed data is growing in popularity. However, until recently, this was the realm of contributing clients with similar computing capability. The fast expanding IoT space and data being generated and processed at the edge are encouraging more effort into expanding federated learning to include heterogeneous systems. Previous approaches distribute light models to clients to distill the characteristic of local data into metadata for a partitioned global updates. However, enabling a large size of metadata to transmit in the network will compromise the communication efficiency of FL. We propose to reduce the size of metadata needed for the global update by clustering the activation maps and selecting only the most representative samples. The partitioned global update adopted in our work splits the global CNN model into a lower part for generic feature extraction and an upper part that is more sensitive to the metadata. Our experiments show that only 1.6% of the metadata can effectively transfer the characteristics of the client data to the global model in our slit network approach. These preliminary results evolve our understanding of federated learning by demonstrating efficient training capability with strategic selected training samples.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/SSMCx-YmrV8" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final8.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -389,9 +409,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               DyFiP: Explainable AI-based Dynamic Filter Pruning of Convolutional Neural Networks
             
-              <span class="speakers-company">Muhammad Sabih, Frank Hannig, Jürgen Teich (Friedrich-Alexander-Universität Erlangen-Nürnberg)</span>
+              <span class="speakers-company">Muhammad Sabih*, Frank Hannig, Jürgen Teich (Friedrich-Alexander-Universität Erlangen-Nürnberg)</span>
               <span class="schedule-description program">Filter pruning is one of the most effective ways to accelerate CNN. Most of the existing works are focused on the static pruning of CNN filters. In dynamic pruning of CNN filters, existing works are based on the idea of switching between different branches of a CNN or exiting early based on the harndess of a sample. These approaches can reduce the average latency of inference, but they cannot reduce the longest-path latency of inference. In contrast, we present a novel approach of dynamic filter pruning that utilizes explainable AI along with early coarse prediction in the intermediate layers of a CNN. This coarse prediction is performed using a simple branch that is trained to perform top-k classification. The branch either predicts the output class with high confidence, in which case the rest of the computations are left out. Alternatively, the branch predicts the output class to be within a subset of possible output classes. After this coarse prediction, only those filters that are important for this subset of classes are then evaluated. The importances of filters for each output class are obtained using explainable AI. Using this concept of dynamic pruning, we are able not only to reduce the average latency of inference, but also the longest-path latency of inference. Our proposed architecture for dynamic pruning can be deployed on different hardware platforms.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/-_ycteQMcSE" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final20.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -403,9 +429,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Apache Submarine: A Unified Machine Learning Platform Made Simple
             
-              <span class="speakers-company">Kai-Hsun Chen (Academia Sinica; University of Illinois at Urbana-Champaign); Huan-Ping Su (Union.ai); Wei-Chiu Chuang (Cloudera); Hung-Chang Hsiao (National Cheng Kung University); Wangda Tan (Snowflake); Zhankun Tang (Cloudera); Xun Liu (DiDi); Yanbo Liang (Meta Platforms); Wen-Chih Lo (Chunghwa Telecom); Wanqiang Ji (JD.com); Byron Hsu (UC Berkeley); Keqiu Hu (LinkedIn); HuiYang Jian (KE Holdings); Quan Zhou (Ant Group); Chien-Min Wang (Academia Sinica)</span>
+              <span class="speakers-company">Kai-Hsun Chen* (Academia Sinica; University of Illinois at Urbana-Champaign); Huan-Ping Su (Union.ai); Wei-Chiu Chuang (Cloudera); Hung-Chang Hsiao (National Cheng Kung University); Wangda Tan (Snowflake); Zhankun Tang (Cloudera); Xun Liu (DiDi); Yanbo Liang (Meta Platforms); Wen-Chih Lo (Chunghwa Telecom); Wanqiang Ji (JD.com); Byron Hsu (UC Berkeley); Keqiu Hu (LinkedIn); HuiYang Jian (KE Holdings); Quan Zhou (Ant Group); Chien-Min Wang (Academia Sinica)</span>
               <span class="schedule-description program">As machine learning is applied more widely, it is necessary to have a machine learning platform for both infrastructure administrators and users including expert data scientists and citizen data scientists to improve their productivity. However, existing machine learning platforms are ill-equipped to address the “Machine Learning tech debts” such as glue code, reproducibility, and portability. Furthermore, existing platforms only take expert data scientists into consideration, and thus they are inflexible for infrastructure administrators and non-user-friendly for citizen data scientists. We propose Submarine, a unified machine learning platform, and take all infrastructure administrators, expert data scientists, and citizen data scientists into consideration. Submarine has been widely used in many technology companies, including Ke.com and LinkedIn.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/dnC5AXzv8Xs" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final22.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -417,9 +449,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Temporal Shift Reinforcement Learning
             
-              <span class="speakers-company">Deepak George Thomas, Tichakorn Wongpiromsarn, Ali Jannesari (Iowa State University)</span>
+              <span class="speakers-company">Deepak George Thomas*, Tichakorn Wongpiromsarn, Ali Jannesari (Iowa State University)</span>
               <span class="schedule-description program">The function approximators employed by traditional image-based Deep Reinforcement Learning (DRL) algorithms usually lack a temporal learning component and instead focus on learning the spatial component. We propose a technique, Temporal Shift Reinforcement Learning (TSRL), wherein both temporal, as well as spatial components are jointly learned. Moreover, TSRL does not require additional parameters to perform temporal learning. We show that TSRL outperforms the commonly used frame stacking heuristic on all of the Atari environments we test on while beating the SOTA for all except one of them. This investigation has implications in the robotics as well as sequential decision-making domains.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=emaXTV26-Nw" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final2.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -427,6 +465,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-other">
             <td class="schedule-time">10:00</td>
             <td class="schedule-slot">Coffee Break</td>
+            <td></td>
           </tr>
         
       
@@ -434,6 +473,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-other">
             <td class="schedule-time">10:30</td>
             <td class="schedule-slot">Introduction</td>
+            <td></td>
           </tr>
         
       
@@ -441,6 +481,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-session">
             <td class="schedule-time">10:40</td>
             <td class="schedule-slot">Session 1: Optimisation</td>
+            <td></td>
           </tr>
         
       
@@ -452,9 +493,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Efficient Multiclass Classification with Duet
             
-              <span class="speakers-company">Shay Vargaftik, Yaniv Ben-Itzhak (VMware Research)</span>
+              <span class="speakers-company">Shay Vargaftik, Yaniv Ben-Itzhak* (VMware Research)</span>
               <span class="schedule-description program">In the upcoming era of edge computing, the capability to perform fast training and classification at the edge is an increasing need due to limited connectivity, hardware resources, privacy concerns, profitability, and more. Accordingly, we propose a new classifier termed Duet. Duet incorporates the advantages of bagging and boosting decision-tree-based ensemble methods (DTEMs) by using two classifiers instead of a monolithic one. A simple bagging model is trained using the entire training dataset and is responsible for capturing the easier concepts. Then, a boosting model is trained using only a fraction of the dataset representing the concepts the bagging model finds hard. To make the whole process resource efficient, we develop a new heuristic approach to rank data with respect to concepts that the bagging model finds hard. We use this approach, termed data instance predictability to determine the dataset fraction for the boosting model training. We implement Duet as a scikit-learn classifier. Evaluation using datasets from different domains and with different characteristics indicates that Duet offers a better tradeoff between classification accuracy and system performance than monolithic DTEMs. Moreover, in an evaluation over a resource-constrained Raspberry Pi 3 device Duet successfully completes all training tasks, where some monolithic models fail due to insufficient resources, indicating broader applicability of Duet to resource-constrained edge devices. Duet is a part of an effort for advancements in resource-efficient classification, and its scikit-learn implementation can be found in https://research.vmware.com/projects/efficient-machine-learning-classification. </span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/gK44DTYqCeE" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final4.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -466,9 +513,12 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Deep Learning on Microcontrollers: A Study on Deployment Costs and Challenges
             
-              <span class="speakers-company">Filip Svoboda (University of Cambridge); JAVIER FERNANDEZ-MARQUES (University of Oxford); EDGAR LIBERIS, NICHOLAS LANE (University of Cambridge)</span>
+              <span class="speakers-company">Filip Svoboda* (University of Cambridge); JAVIER FERNANDEZ-MARQUES (University of Oxford); EDGAR LIBERIS, NICHOLAS LANE (University of Cambridge)</span>
               <span class="schedule-description program">Deep learning on resource-constrained hardware has become more viable in recent years due to the development of lightweight architectures and compression techniques. Mobile devices are a particularly popular target platform for which major deep learning frameworks offer a streamlined model deployment pipeline. Still, it is possible to run deep neural networks (DNNs) in an even more constrained environment, namely on microcontrollers (MCUs). Microcontrollers are an attractive deployment target due to their low cost, modest power usage and abundance in the wild. However, deploying models to such hardware is non-trivial due to a small amount of on-chip RAM (often < 512KB) and limited compute capabilities. In this work, we delve into the requirements and challenges of fast DNN inference on MCUs: we describe how the memory hierarchy influences the architecture of the model, expose often under-reported costs of compression and quantization techniques, and highlight issues that become critical when deploying to MCUs compared to mobiles. Our findings and experiences are also distilled into a set of guidelines that should ease the future deployment of DNN-based applications on microcontrollers.</span>
             </td>
+            
+              <td></td>
+            
           </tr>
         
       
@@ -480,9 +530,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               syslrn: Learning What to Monitor for Efficient Anomaly Detection
             
-              <span class="speakers-company">Davide Sanvito, Giuseppe Siracusano, Sharan Santhanam, Roberto Gonzalez, Roberto Bifulco (NEC Laboratories Europe)</span>
+              <span class="speakers-company">Davide Sanvito*, Giuseppe Siracusano, Sharan Santhanam, Roberto Gonzalez, Roberto Bifulco (NEC Laboratories Europe)</span>
               <span class="schedule-description program">While monitoring system behavior to detect anomalies and failures is important, existing methods based on log-analysis can only be as good as the information contained in the logs, and other approaches that look at the OS-level software state introduce high overheads. We tackle the problem with syslrn, a system that first builds an understanding of a target system offline, and then tailors the online monitoring instrumentation based on the learned identifiers of normal behavior. While our syslrn prototype is still preliminary and lacks many features, we show in a case study for the monitoring of OpenStack failures that it can outperform state-of-the-art log-analysis systems with little overhead.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/Ek27jkFz5bQ" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final17.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -494,9 +550,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
                BoGraph: Structured Bayesian Optimization From Logs for Expensive Systems with Many
             
-              <span class="speakers-company">Sami Alabed, Eiko Yoneki (University of Cambridge)</span>
+              <span class="speakers-company">Sami Alabed*, Eiko Yoneki (University of Cambridge)</span>
               <span class="schedule-description program">Current auto-tuners struggle with computer systems due to their large complex parameter space and high evaluation cost. We propose BoGraph, an auto-tuning framework that builds a graph of the system components before optimizing it using causal structure learning. The graph contextualizes the system via decomposition of the parameter space for faster convergence and handling of many parameters. Furthermore, BoGraph exposes an API to encode experts' knowledge of the system via performance models and a known dependency structure of the components. We evaluated BoGraph via a hardware design case study achieving 5x-7x5x−7x improvement in energy and latency over the default in a variety of tasks.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=1VUUXlTX5q8" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final15.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -504,6 +566,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-other">
             <td class="schedule-time">12:00</td>
             <td class="schedule-slot">Poster Elevator Pitch</td>
+            <td></td>
           </tr>
         
       
@@ -511,6 +574,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-other">
             <td class="schedule-time">12:30</td>
             <td class="schedule-slot">Lunch Break / Poster Session</td>
+            <td></td>
           </tr>
         
       
@@ -525,6 +589,9 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
               <span class="speakers-company">CMU</span>
               <span class="schedule-description program">Deploying deep learning models on various devices has become an important topic. Machine learning compilation is an emerging field that leverages compiler and automatic search techniques to accelerate AI models. ML compilation brings a unique set of challenges: emerging machine learning models; increasing hardware specialization brings a diverse set of acceleration primitives; growing tension between flexibility and performance.    Multiple layers of abstractions and corresponding optimizations are needed to solve these challenges at different levels of a system. In this talk, I will talk about our experiences designing abstractions. I will then discuss the new challenges brought by multiple abstractions themselves and our recent effort to tackle these challenges through unifying representation and ML-driven automation.</span>
             </td>
+            
+              <td></td>
+            
           </tr>
         
       
@@ -532,6 +599,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-session">
             <td class="schedule-time">14:30</td>
             <td class="schedule-slot">Session 2: Reinforcement Learning, Meta-Learning and Federated Learning</td>
+            <td></td>
           </tr>
         
       
@@ -543,10 +611,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Reinforcement Learning for Resource Management in Multi-tenant Serverless Platforms
             
-              <span class="speakers-company">Haoran Qiu, Weichao Mao, Archit Patke (University of Illinois at Urbana-Champaign); Chen Wang, Hubertus Franke (IBM Thomas J. Watson Research Center); Zbigniew Kalbarczyk, Tamer Başar, Ravishankar K. Iyer (University of Illinois at Urbana-Champaign)</span>
-              <span class="schedule-description program">Serverless Function-as-a-Service (FaaS) is an emerging cloud computing paradigm that frees application developers from infrastructure management tasks such as resource provisioning and scaling. To reduce the tail latency of functions and improve resource utilization, recent research has been focused on applying online learning algorithms such as reinforcement learning (RL) to manage resources. Compared to existing heuristics-based resource management approaches, RL-based approaches eliminate humans in the loop and avoid the painstaking generation of heuristics. In this paper, we show that the state-of-the-art single-agent RL algorithm (S-RL) suffers up to 4.6x higher function tail latency degradation on multi-tenant serverless FaaS platforms and is unable to converge during training. We then propose and implement a customized multi-agent RL algorithm based on Proximal Policy Optimization, i.e., multi-agent PPO (MA-PPO). We show that in multi-tenant environments, MA-PPO enables each agent to be trained until convergence and provides online performance comparable to S-RL in single-tenant cases with less than 10% degradation. Besides, MA-PPO provides a 4.4x improvement in S-RL performance (in terms of function tail latency) in multi-tenant cases.
-</span>
+              <span class="speakers-company">Haoran Qiu*, Weichao Mao, Archit Patke (University of Illinois at Urbana-Champaign); Chen Wang, Hubertus Franke (IBM Thomas J. Watson Research Center); Zbigniew Kalbarczyk, Tamer Başar, Ravishankar K. Iyer (University of Illinois at Urbana-Champaign)</span>
+              <span class="schedule-description program">Serverless Function-as-a-Service (FaaS) is an emerging cloud computing paradigm that frees application developers from infrastructure management tasks such as resource provisioning and scaling. To reduce the tail latency of functions and improve resource utilization, recent research has been focused on applying online learning algorithms such as reinforcement learning (RL) to manage resources. Compared to existing heuristics-based resource management approaches, RL-based approaches eliminate humans in the loop and avoid the painstaking generation of heuristics. In this paper, we show that the state-of-the-art single-agent RL algorithm (S-RL) suffers up to 4.6x higher function tail latency degradation on multi-tenant serverless FaaS platforms and is unable to converge during training. We then propose and implement a customized multi-agent RL algorithm based on Proximal Policy Optimization, i.e., multi-agent PPO (MA-PPO). We show that in multi-tenant environments, MA-PPO enables each agent to be trained until convergence and provides online performance comparable to S-RL in single-tenant cases with less than 10% degradation. Besides, MA-PPO provides a 4.4x improvement in S-RL performance (in terms of function tail latency) in multi-tenant cases.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/acHvHQGvY1M" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final5.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -558,9 +631,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Rapid Model Architecture Adaption for Meta-Learning
             
-              <span class="speakers-company">Yiren Zhao (University of Cambridge); Xitong Gao (Shenzhen Institutes of Advanced Technology); Ilia Shumailov (University of Cambridge); Nicolo Fusi (Microsoft); Robert Mullins (University of Cambridge)</span>
+              <span class="speakers-company">Yiren Zhao* (University of Cambridge); Xitong Gao (Shenzhen Institutes of Advanced Technology); Ilia Shumailov (University of Cambridge); Nicolo Fusi (Microsoft); Robert Mullins (University of Cambridge)</span>
               <span class="schedule-description program">Network Architecture Search (NAS) methods have recently gathered much attention. They design networks with better performance and use a much shorter search time compared to traditional manual tuning. Despite their efficiency in model deployments, most NAS algorithms target a single task on a fixed hardware system. However, real-life few-shot learning environments often cover a great number of tasks (TT) and deployments on a wide variety of hardware platforms (HH). The combinatorial search complexity T 	imes HT×H creates a fundamental search efficiency challenge if one naively applies existing NAS methods to these scenarios. To overcome this issue, we show, for the first time, how to rapidly adapt model architectures to new tasks in a many-task many-hardware few-shot learning setup by integrating Model Agnostic Meta Learning (MAML) into the NAS flow.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=W3QElP3JOWo" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final21.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -572,9 +651,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
                How Reinforcement Learning Systems Fail and What to do About It
             
-              <span class="speakers-company"> Pouya Hamdanian (MIT); Malte Schwarzkopf (Brown University); Siddhartha Sen (Microsoft Research); Mohammad Alizadeh (MIT CSAIL)</span>
+              <span class="speakers-company"> Pouya Hamdanian* (MIT); Malte Schwarzkopf (Brown University); Siddhartha Sen (Microsoft Research); Mohammad Alizadeh (MIT CSAIL)</span>
               <span class="schedule-description program">Recent research has turned to Reinforcement Learning (RL) to solve challenging decision problems, as an alternative to hand-tuned heuristics. RL can learn good policies without the need for modeling the environment's dynamics. Despite this promise, RL remains an impractical solution for many real-world systems problems. A particularly challenging case occurs when the environment changes over time, i.e. it exhibits non-stationarity. In this work, we characterize the challenges introduced by non-stationarity and develop a framework for addressing them to train RL agents in live systems. Such agents must explore and learn new environments, without hurting the system's performance, and remember them over time. To this end, our framework (1) identifies different environments encountered by the live system, (2) explores and trains a separate expert policy for each environment, and (3) employs safeguards to protect the system's performance. We apply our framework to straggler mitigation, and evaluate it against a variety of alternative approaches using real-world. We show that each component of our framework is necessary to cope with non-stationarity.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/7hwJZazg9hk" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final12.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -586,9 +671,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Empirical Analysis of Federated Learning in Heterogeneous Environments
             
-              <span class="speakers-company">Ahmed M. Abdelmoniem (Queen Mary University of London); Chen-Yu Ho, Pantelis Papageorgiou, Marco Canini (KAUST)</span>
+              <span class="speakers-company">Ahmed M. Abdelmoniem (Queen Mary University of London); Chen-Yu Ho, Pantelis Papageorgiou, Marco Canini* (KAUST)</span>
               <span class="schedule-description program">Federated learning (FL) is becoming a popular paradigm for collaborative learning over distributed, private datasets owned by non-trusting entities. FL has seen successful deployment in production environments, and it has been adopted in services such as virtual keyboards, auto-completion, item recommendation, and several IoT applications. However, FL comes with the challenge of performing training over largely heterogeneous datasets, devices, and networks that are out of the control of the centralized FL server. Motivated by this inherent setting, we make a first step towards characterizing the impact of device and behavioral heterogeneity on the trained model. We conduct an extensive empirical study spanning close to 1.5K unique configurations on five popular FL benchmarks. Our analysis shows that these sources of heterogeneity have a major impact on both model performance and fairness, thus shedding light on the importance of considering heterogeneity in FL system design.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/U2F6vyEZmNE" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final3.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -596,6 +687,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-other">
             <td class="schedule-time">15:50</td>
             <td class="schedule-slot">Coffee Break</td>
+            <td></td>
           </tr>
         
       
@@ -610,6 +702,9 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
               <span class="speakers-company">Google Brain</span>
               <span class="schedule-description program">The rise of machine learning has already transformed many research areas, and has the potential to transform chip design. While ML has inspired the design of new domain- specific accelerators, such as Tensor Processing Units (TPUs), there exists many opportunities for using ML to target traditional areas of chip design across the entire stack. In this talk, I will cover several research projects from the ML for Systems team in Google Brain, focusing our latest effort using ML to automatically optimize key ML accelerator design decisions within the hardware-software stack.</span>
             </td>
+            
+              <td></td>
+            
           </tr>
         
       
@@ -617,6 +712,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-session">
             <td class="schedule-time">17:00</td>
             <td class="schedule-slot">Session 3: Applications</td>
+            <td></td>
           </tr>
         
       
@@ -628,9 +724,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               slo-nns: Service Level Objective-Aware Neural Networks
             
-              <span class="speakers-company"> Daniel Mendoza, Caroline Trippel (Stanford University)</span>
+              <span class="speakers-company"> Daniel Mendoza*, Caroline Trippel (Stanford University)</span>
               <span class="schedule-description program">Machine learning (ML) inference is a real-time workload that must comply with strict Service Level Objectives (SLOs), including latency and accuracy targets. Unfortunately, ensuring that SLOs are not violated in inference-serving systems is challenging due to inherent model accuracy-latency tradeoffs, SLO diversity across and within application domains, evolution of SLOs over time, unpredictable query patterns, and co-location interference. In this paper, we observe that neural networks exhibit high degrees of per-input activation sparsity during inference. Thus, we propose SLO-Aware Neural Networks which dynamically drop out nodes per-inference query, thereby tuning the amount of computation performed, according to specified SLO optimization targets and machine utilization. slo-nns achieve average speedups of 1.3-56.7	imes1.3−56.7× with little to no accuracy loss (less than 0.3%). When accuracy constrained, slo-nns are able to serve a range of accuracy targets at low latency with the same trained model. When latency constrained, slo-nns can proactively alleviate latency degradation from co-location interference while maintaining high accuracy to meet latency constraints.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=z288J40lp9M" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final11.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -642,9 +744,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               FlexHTTP: An Intelligent and Scalable HTTP Version Selection System
             
-              <span class="speakers-company">Mengying Zhou, Zheng Li, Shihan Lin, Xin Wang, Yang Chen (Fudan University)</span>
+              <span class="speakers-company">Mengying Zhou*, Zheng Li, Shihan Lin, Xin Wang, Yang Chen (Fudan University)</span>
               <span class="schedule-description program">HTTP has been the primary protocol for web data transmission for decades. Since the late 1990s, HTTP/1.1 has been widely used. Recently, both HTTP/2 and HTTP/3 have been proposed to achieve a better experience on web browsing. However, it is still unknown which of them performs better. In this paper, we leverage the controllable experimental environment of Emulab testbed to conduct a series of measurement studies and find that under different network conditions and web page structures, neither HTTP/2 nor HTTP/3 can always perform better. Motivated by this finding, we propose FlexHTTP, an intelligent and scalable HTTP version selection system. FlexHTTP embeds a supervised machine learning-based classifier to select the appropriate HTTP version according to network conditions and page structures. FlexHTTP adopts a set of distributed agent servers to ensure scalability and keep the classifier up-to-date with the dynamic network. We implement and deploy a proof-of-concept prototype of FlexHTTP on the Emulab testbed. Experiments show that the FlexHTTP achieves a reduction of Speed Index by up to 600ms.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=pzz7F_NFBJI" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final6.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -656,9 +764,15 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
             
               Live Video Analytics as a Service
             
-              <span class="speakers-company">Guilherme Henrique Apostolo, Pablo Bauszat, Vinod Nigade, Henri E. Bal, Lin Wang (Vrije Universiteit Amsterdam)</span>
+              <span class="speakers-company">Guilherme Henrique Apostolo*, Pablo Bauszat, Vinod Nigade, Henri E. Bal, Lin Wang (Vrije Universiteit Amsterdam)</span>
               <span class="schedule-description program">Many private and public organizations deploy large numbers of cameras, which are used in application services for public safety, healthcare, and traffic control. Recent advances in deep learning have demonstrated remarkable accuracy on computer analytics tasks that are fundamental for these applications, such as object detection and action recognition. While deep learning opens the door for the automation of camera-based applications, deploying pipelines for live video analytics is still a complicated process that requires domain expertise in the fields of machine learning, computer vision, computer systems, and networks. The problem is further amplified when multiple pipelines need to be deployed on the same infrastructure to meet different users' diverse and yet dynamic needs. In this paper, we present a live-video-analytics-as-a-service vision, aiming to remove the complexity barrier and achieve flexibility, agility, and efficiency for applications based on live video analytics. We motivate our vision by identifying its requirements and the shortcomings of existing approaches. Based on our analysis, we present our envisioned system design and discuss the challenges that need to be addressed to make it a reality.</span>
             </td>
+            
+            <td class="schedule-resources">
+              <a href="https://youtu.be/B0Q1A2k48Dg" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/euromlsys22-final7.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
+            
           </tr>
         
       
@@ -666,6 +780,7 @@ Register via this <a href="https://2022.eurosys.org/registration/">[Link]</a>.
           <tr class="schedule-other">
             <td class="schedule-time">18:00</td>
             <td class="schedule-slot">Wrapup</td>
+            <td></td>
           </tr>
         
       
