@@ -270,7 +270,8 @@
               Actionable Data Insights for Machine Learning
             
               <span class="speakers-company">Nils Braun (Apple)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Artificial Intelligence (AI) and Machine Learning (ML) have made tremendous progress in the recent decade and have become ubiquitous in almost all application domains. Many recent advancements in the ease-of-use of ML frameworks and the low-code model training automations have further reduced the threshold for ML model building. As ML algorithms and pre-trained models become commodities, curating the appropriate training datasets and model evaluations remain critical challenges. However, these tasks are labor-intensive and require ML practitioners to have bespoke data skills. Based on the feedback from different ML projects, we
+built ADIML (Actionable Data Insights for ML) – a holistic data toolset. The goal is to democratize data-centric ML approaches by removing big data and distributed system barriers for engineers. We show in several case studies how the application of ADIML has helped solve specific data challenges and shorten the time to obtain actionable insights.</span>
             </td>
             
               <td></td>
@@ -287,7 +288,9 @@
               Dynamic Stashing Quantization for Efficient Transformer Training
             
               <span class="speakers-company">Guo Yang (University of Cambridge)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Large Language Models (LLMs) have demonstrated impressive performance on a range of Natural Language Processing (NLP) tasks. Unfortunately, the immense amount of computations and memory accesses required for LLM training makes them prohibitively expensive in terms of hardware cost, and thus challenging to deploy in use cases such as on-device learning.
+
+In this paper, motivated by the observation that LLM training is memory-bound, we propose a novel dynamic quantization strategy, termed Dynamic Stashing Quantization (DSQ), that puts a special focus on reducing the memory operations, but also enjoys the other benefits of low precision training, such as the reduced arithmetic cost. We conduct a thorough study on two translation tasks (trainedfrom-scratch) and three classification tasks (fine-tuning). DSQ reduces the amount of arithmetic operations by 20.95X and the number of DRAM operations by 2.55X on IWSLT17 compared to the standard 16-bit fixed-point, which is widely used in on-device learning.</span>
             </td>
             
               <td></td>
@@ -304,7 +307,7 @@
               Towards A Platform for Model Training on Dynamic Datasets 
             
               <span class="speakers-company">Maximilian Böther (ETHZ)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Machine learning (ML) is often applied in use cases where training data evolves and/or grows over time. Training must incorporate data changes for high model quality, however this is often challenging and expensive due to large datasets and models. In contrast, ML researchers often train and evaluate ML models on static datasets or with artificial assumptions about data dynamics. This gap between research and practice is largely due to (i) the absence of an open-source platform that manages dynamic datasets at scale and supports pluggable policies for when and what data to train on, and (ii) the lack of representative open-source benchmarks for ML training on dynamic datasets. To address this gap, we propose to design a platform that enables ML researchers and practitioners to explore training and data selection policies, while alleviating the burdens of managing large dynamic datasets and orchestrating recurring training jobs. We also propose to build an accompanying benchmark suite that integrates public dynamic datasets and ML models from a variety of representative use cases.</span>
             </td>
             
               <td></td>
@@ -321,7 +324,7 @@
               Profiling and Monitoring Deep Learning Training Tasks
             
               <span class="speakers-company">Ehsan Yousefzadeh-Asl-Miandoab (IT University of Copenhagen)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">The embarrassingly parallel nature of deep learning training tasks makes CPU-GPU co-processors the primary commodity hardware for them. The computing and memory requirements of these tasks, however, do not always align well with the available GPU resources. It is, therefore, important to monitor and profile the behavior of training tasks on co-processors to understand better the requirements of different use cases. In this paper, our goal is to shed more light on the variety of tools for profiling and monitoring deep learning training tasks on server-grade NVIDIA GPUs. In addition to surveying the main characteristics of the tools, we analyze the functional limitations and overheads of each tool by using a both light and heavy training scenario. Our results show that monitoring tools like nvidia-smi and dcgm can be integrated with resource managers for online decision making thanks to their low overheads. On the other hand, one has to be careful about the set of metrics to correctly reason about the GPU utilization. When it comes to profiling, each tool has its time to shine; a framework-based or system-wide GPU profiler can first detect the frequent kernels or bottlenecks, and then, a lower-level GPU profiler can focus on particular kernels at the micro-architectural-level.</span>
             </td>
             
               <td></td>
@@ -338,7 +341,7 @@
               MCTS-GEB: Monte Carlo Tree Search is a Good E-graph Builder 
             
               <span class="speakers-company">Guoliang He (University of Cambridge)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Rewrite systems [ 11, 16, 18] have been widely employing equality saturation [15], which is an optimisation methodology that uses a saturated e-graph to represent all possible sequences of rewrite simultaneously, and then extracts the optimal one. As such, optimal results can be achieved by avoiding the phase-ordering problem. However, we observe that when the e-graph is not saturated, it cannot represent all possible rewrite opportunities and therefore the phase-ordering problem is re-introduced during the construction phase of the e-graph. To address this problem, we propose MCTS-GEB, a domain-general rewrite system that applies reinforcement learning (RL) to e-graph construction. At its core, MCTS-GEB uses a Monte Carlo Tree Search (MCTS) [4] to efficiently plan for the optimal e-graph construction, and therefore it can effectively eliminate the phase-ordering problem at the construction phase and achieve better performance within a reasonable time. Evaluation in two different domains shows MCTS-GEB can outperform the state-of-the-art rewrite systems by up to 49x, while the optimisation can generally take less than an hour, indicating MCTS-GEB is a promising building block for the future generation of rewrite systems.</span>
             </td>
             
               <td></td>
@@ -371,7 +374,7 @@
               Decentralized Learning Made Easy with DecentralizePy
             
               <span class="speakers-company">Rishi Sharma (EPFL)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Decentralized learning (DL) has gained prominence for its potential benefits in terms of scalability, privacy, and fault tolerance. It consists of many nodes that coordinate without a central server and exchange millions of parameters in the inherently iterative process of machine learning (ML) training. In addition, these nodes are connected in complex and potentially dynamic topologies. Assessing the intricate dynamics of such networks is clearly not an easy task. Often in literature, researchers resort to simulated environments that do not scale and fail to capture practical and crucial behaviors, including the ones associated to parallelism, data transfer, network delays, and wall-clock time. In this paper, we propose DecentralizePy, a distributed framework for decentralized ML, which allows for the emulation of large-scale learning networks in arbitrary topologies. We demonstrate the capabilities of DecentralizePy by deploying techniques such as sparsification and secure aggregation on top of several topologies, including dynamic networks with more than one thousand nodes.</span>
             </td>
             
               <td></td>
@@ -388,7 +391,14 @@
               Towards Practical Few-shot Federated NLP
             
               <span class="speakers-company">Dongqi Cai (Beiyou Shenzhen Institute)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Transformer-based pre-trained models have emerged as the predominant solution for natural language processing (NLP).
+Fine-tuning such pre-trained models for downstream tasks often requires a considerable amount of labeled private data.
+In practice, private data is often distributed across heterogeneous mobile devices and may be prohibited from being uploaded.
+Moreover, well-curated labeled data is often scarce, presenting an additional challenge.
+To address these challenges, we first introduce a data generator for federated few-shot learning tasks, which encompasses the quantity and skewness of scarce labeled data in a realistic setting.
+Subsequently, we propose AUG-FedPrompt, a prompt-based fed}erated learning system that exploits abundant unlabeled data for data augmentation.
+Our experiments indicate that AUG-FedPrompt can perform on par with full-set fine-tuning with a limited amount of labeled data.
+However, such competitive performance comes at a significant system cost.</span>
             </td>
             
               <td></td>
@@ -405,7 +415,8 @@
               Towards Robust and Bias-free Federated Learning
             
               <span class="speakers-company">Ousmane Touat (LIRIS INSA Lyon)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Federated learning (FL) is an exciting machine learning approach where multiple devices collaboratively train a model without sharing their raw data. The FL system is vulnerable to the action of Byzantine clients sending arbitrary model updates, and the trained model may exhibit prediction bias towards specific groups. However, FL mechanisms tackling robustness and bias mitigation have contradicting objectives, motivating the question of building a FL system that comprehensively combines both objectives. 
+In this paper, we first survey state-of-the-art approaches to robustness to Byzantine behavior and bias mitigation and analyze their respective objectives. Then, we conduct an empirical evaluation to illustrate the interplay between state-of-the-art FL robustness mechanisms and FL bias mitigation mechanisms. Specifically, we show that classical robust FL methods may inadvertently filter out benign FL clients that have statistically rare data, particularly for minority groups. Finally, we derive research directions for building more robust and bias-free FL systems.</span>
             </td>
             
               <td></td>
@@ -422,7 +433,7 @@
               Gradient-less Federated Gradient Boosting Tree with Learnable Learning Rate
             
               <span class="speakers-company">Chenyang Ma (University of Cambridge)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">The privacy-sensitive nature of decentralized datasets and the robustness of eXtreme Gradient Boosting (XGBoost) on tabular data raise the needs to train XGBoost in the context of federated learning (FL). Existing works on federated XGBoost in the horizontal setting rely on the sharing of gradients, which induce per-node level communication frequency and serious privacy concerns. To alleviate these problems, we develop an innovative framework for horizontal federated XGBoost which does not depend on the sharing of gradients and simultaneously boosts privacy and communication efficiency by making the learning rates of the aggregated tree ensembles learnable. We conduct extensive evaluations on various classification and regression datasets, showing our approach achieves performance comparable to the state-of-the-art method and effectively improves communication efficiency by lowering both communication rounds and communication overhead by factors ranging from 25x to 700x.</span>
             </td>
             
               <td></td>
@@ -439,7 +450,7 @@
               Distributed Training for Speech Recognition using Local Knowledge Aggregation and Knowledge Distillation in Heterogeneous Systems
             
               <span class="speakers-company">Hongrui Shi (U. Sheffield)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Data privacy and protection are crucial issues for any automatic speech recognition (ASR) system when relying on client generated data for training. The best protection is achieved when training is distributed closer to the client local data, rather than centralising the training. However, distributed training suffers from system heterogeneity, due to clients having unequal computation resources, and data heterogeneity, due to training data being non-independent and identically distributed (non-IID). To tackle these challenges, we introduce FedKAD, a Federated Learning (FL) framework that uses local Knowledge Aggregation over top level feature maps and Knowledge Distillation. We show that our FedKAD achieves better communication efficiency than standard FL methods that use uniform models, due to transferring parameters of smaller size client models, and overall better accuracy than FedMD, an alternative KD-based approach designed for heterogeneous data. Our work enables faster, cheaper and more inclusive participation of clients in heterogeneous distributed training.</span>
             </td>
             
               <td></td>
@@ -651,7 +662,7 @@
               FoldFormer: sequence folding and seasonal attention for fine-grained long-term FaaS forecasting
             
               <span class="speakers-company">Luke Darlow (Huawei)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Fine-grained long-term (FGLT) time series forecasting is a fundamental challenge in Function as a Service (FaaS) platforms. The data that FaaS function requests produce are fine-grained (per-second/minute), often have daily periodicity, and are persistent over the long term. Forecasting in the FGLT data regime is challenging, and Transformer models can scale poorly for long sequences. We propose FoldFormer that combines several novel elements – time-to-latent folding, seasonal attention, and convolutions over FFT representations – as a new solution for FGLT forecasting of FaaS function requests. FoldFormer is designed to efficiently consume very fine-grained multi-day data with nearly no additional model, memory, or compute overhead, when compared to consuming coarse-grained data. We show either state-of-the-art or competitive performance for per-minute function requests on the top 5 most requested functions for three data sources, including two in-house Huawei Cloud sources and Azure 2019. We also show state-of-the-art performance at per-second granularity — a regime that critically limits most other methods.</span>
             </td>
             
               <td></td>
@@ -668,7 +679,7 @@
               Reconciling High Accuracy, Cost-Efficiency, and Low Latency of Inference Serving Systems
             
               <span class="speakers-company">Alireza Sanaee (Queen Mary University of London)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">The use of machine learning (ML) inference for various applications is growing drastically. ML inference services engage with users directly, requiring fast and accurate responses. Moreover, these services face dynamic workloads of requests, imposing changes in their computing resources. Failing to right-size computing resources results in either latency service level objectives (SLOs) violations or wasted computing resources. Adapting to dynamic workloads considering all the pillars of accuracy, latency, and resource cost is challenging. In response to these challenges, we propose an adaptation mechanism, InfAdapter, that proactively selects a set of ML model variants with their resource allocations to meet latency SLO while maximizing an objective function composed of accuracy and cost. InfAdapter decreases SLO violation and costs up to 65% and 33%, respectively, compared to a popular industry autoscaler (Kubernetes Vertical Pod Autoscaler).</span>
             </td>
             
               <td></td>
@@ -685,7 +696,8 @@
               Robust and Tiny Binary Neural Networks using Gradient-based Explainability Methods
             
               <span class="speakers-company">Muhammad Sabih (Friedrich-Alexander)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">Binary neural networks (BNNs) are a highly resource-efficient variant of neural networks. The efficiency of BNNs for tiny machine learning (TinyML) systems can be enhanced by structured pruning and making BNNs robust to faults. This fault tolerance can be traded off for energy consumption, latency, or cost when used with approximate memory systems. For pruning, magnitude-based heuristics are not useful because the weights in a BNN can either be -1 or +1. Global pruning of BNNs has not been studied well so far. Thus, in this paper, we explore gradient-based ranking criteria for pruning BNNs and use them in combination with a sensitivity analysis. 
+For robustness, the state-of-the-art is to train the BNNs with bit-flips in what is known as fault-aware training. We propose a method to guide fault-aware training using gradient-based explainability methods. This allows us to obtain robust and efficient BNNs for deployment on tiny devices. Experiments on audio and image processing applications show that our proposed approach outperforms the existing approaches, making it useful for obtaining efficient and robust models for a slight degradation in accuracy. This makes our approach valuable for many TinyML use cases.</span>
             </td>
             
               <td></td>
@@ -702,7 +714,7 @@
               Illuminating the hidden challenges of data-driven CDNs
             
               <span class="speakers-company">Theophilus A. Benson (CMU)</span>
-              <span class="schedule-description program"></span>
+              <span class="schedule-description program">While Data-driven CDNs have the potential to provide un- paralleled performance and availability improvements, they open up an intricate and exciting tapestry of previously un- addressed problems. This paper highlights these problems, explores existing solutions, and identifies open research questions for each direction. We, also, present a strawman approach, Guard-Rails, that embodies preliminary techniques that can be used to help safeguard data-driven CDNs against the identified perils.</span>
             </td>
             
               <td></td>
