@@ -274,7 +274,9 @@
 built ADIML (Actionable Data Insights for ML) – a holistic data toolset. The goal is to democratize data-centric ML approaches by removing big data and distributed system barriers for engineers. We show in several case studies how the application of ADIML has helped solve specific data challenges and shorten the time to obtain actionable insights.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="pdf/oral/O12/12_slides.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -293,7 +295,10 @@ built ADIML (Actionable Data Insights for ML) – a holistic data toolset. The g
 In this paper, motivated by the observation that LLM training is memory-bound, we propose a novel dynamic quantization strategy, termed Dynamic Stashing Quantization (DSQ), that puts a special focus on reducing the memory operations, but also enjoys the other benefits of low precision training, such as the reduced arithmetic cost. We conduct a thorough study on two translation tasks (trainedfrom-scratch) and three classification tasks (fine-tuning). DSQ reduces the amount of arithmetic operations by 20.95X and the number of DRAM operations by 2.55X on IWSLT17 compared to the standard 16-bit fixed-point, which is widely used in on-device learning.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://youtu.be/tBY6mjJjGK8" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O11/11_slides.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -310,7 +315,9 @@ In this paper, motivated by the observation that LLM training is memory-bound, w
               <span class="schedule-description program">Machine learning (ML) is often applied in use cases where training data evolves and/or grows over time. Training must incorporate data changes for high model quality, however this is often challenging and expensive due to large datasets and models. In contrast, ML researchers often train and evaluate ML models on static datasets or with artificial assumptions about data dynamics. This gap between research and practice is largely due to (i) the absence of an open-source platform that manages dynamic datasets at scale and supports pluggable policies for when and what data to train on, and (ii) the lack of representative open-source benchmarks for ML training on dynamic datasets. To address this gap, we propose to design a platform that enables ML researchers and practitioners to explore training and data selection policies, while alleviating the burdens of managing large dynamic datasets and orchestrating recurring training jobs. We also propose to build an accompanying benchmark suite that integrates public dynamic datasets and ML models from a variety of representative use cases.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="pdf/oral/O16/16_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -327,7 +334,10 @@ In this paper, motivated by the observation that LLM training is memory-bound, w
               <span class="schedule-description program">The embarrassingly parallel nature of deep learning training tasks makes CPU-GPU co-processors the primary commodity hardware for them. The computing and memory requirements of these tasks, however, do not always align well with the available GPU resources. It is, therefore, important to monitor and profile the behavior of training tasks on co-processors to understand better the requirements of different use cases. In this paper, our goal is to shed more light on the variety of tools for profiling and monitoring deep learning training tasks on server-grade NVIDIA GPUs. In addition to surveying the main characteristics of the tools, we analyze the functional limitations and overheads of each tool by using a both light and heavy training scenario. Our results show that monitoring tools like nvidia-smi and dcgm can be integrated with resource managers for online decision making thanks to their low overheads. On the other hand, one has to be careful about the set of metrics to correctly reason about the GPU utilization. When it comes to profiling, each tool has its time to shine; a framework-based or system-wide GPU profiler can first detect the frequent kernels or bottlenecks, and then, a lower-level GPU profiler can focus on particular kernels at the micro-architectural-level.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=-dZkowi_zpM" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O20/20_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -344,7 +354,10 @@ In this paper, motivated by the observation that LLM training is memory-bound, w
               <span class="schedule-description program">Rewrite systems [ 11, 16, 18] have been widely employing equality saturation [15], which is an optimisation methodology that uses a saturated e-graph to represent all possible sequences of rewrite simultaneously, and then extracts the optimal one. As such, optimal results can be achieved by avoiding the phase-ordering problem. However, we observe that when the e-graph is not saturated, it cannot represent all possible rewrite opportunities and therefore the phase-ordering problem is re-introduced during the construction phase of the e-graph. To address this problem, we propose MCTS-GEB, a domain-general rewrite system that applies reinforcement learning (RL) to e-graph construction. At its core, MCTS-GEB uses a Monte Carlo Tree Search (MCTS) [4] to efficiently plan for the optimal e-graph construction, and therefore it can effectively eliminate the phase-ordering problem at the construction phase and achieve better performance within a reasonable time. Evaluation in two different domains shows MCTS-GEB can outperform the state-of-the-art rewrite systems by up to 49x, while the optimisation can generally take less than an hour, indicating MCTS-GEB is a promising building block for the future generation of rewrite systems.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://youtu.be/wvrcJVsGU5Y" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O8/8_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -377,7 +390,10 @@ In this paper, motivated by the observation that LLM training is memory-bound, w
               <span class="schedule-description program">Decentralized learning (DL) has gained prominence for its potential benefits in terms of scalability, privacy, and fault tolerance. It consists of many nodes that coordinate without a central server and exchange millions of parameters in the inherently iterative process of machine learning (ML) training. In addition, these nodes are connected in complex and potentially dynamic topologies. Assessing the intricate dynamics of such networks is clearly not an easy task. Often in literature, researchers resort to simulated environments that do not scale and fail to capture practical and crucial behaviors, including the ones associated to parallelism, data transfer, network delays, and wall-clock time. In this paper, we propose DecentralizePy, a distributed framework for decentralized ML, which allows for the emulation of large-scale learning networks in arbitrary topologies. We demonstrate the capabilities of DecentralizePy by deploying techniques such as sparsification and secure aggregation on top of several topologies, including dynamic networks with more than one thousand nodes.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=OW_-lggBmIw" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O18/18_slides.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -401,7 +417,10 @@ Our experiments indicate that AUG-FedPrompt can perform on par with full-set fin
 However, such competitive performance comes at a significant system cost.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=7O88PnYi2NU" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O5/5_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -419,7 +438,10 @@ However, such competitive performance comes at a significant system cost.</span>
 In this paper, we first survey state-of-the-art approaches to robustness to Byzantine behavior and bias mitigation and analyze their respective objectives. Then, we conduct an empirical evaluation to illustrate the interplay between state-of-the-art FL robustness mechanisms and FL bias mitigation mechanisms. Specifically, we show that classical robust FL methods may inadvertently filter out benign FL clients that have statistically rare data, particularly for minority groups. Finally, we derive research directions for building more robust and bias-free FL systems.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=1d9lWumJHZI" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O6/6_slides.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -436,7 +458,10 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
               <span class="schedule-description program">The privacy-sensitive nature of decentralized datasets and the robustness of eXtreme Gradient Boosting (XGBoost) on tabular data raise the needs to train XGBoost in the context of federated learning (FL). Existing works on federated XGBoost in the horizontal setting rely on the sharing of gradients, which induce per-node level communication frequency and serious privacy concerns. To alleviate these problems, we develop an innovative framework for horizontal federated XGBoost which does not depend on the sharing of gradients and simultaneously boosts privacy and communication efficiency by making the learning rates of the aggregated tree ensembles learnable. We conduct extensive evaluations on various classification and regression datasets, showing our approach achieves performance comparable to the state-of-the-art method and effectively improves communication efficiency by lowering both communication rounds and communication overhead by factors ranging from 25x to 700x.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://youtu.be/9qerzP8VbxI" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O10/10_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -453,7 +478,10 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
               <span class="schedule-description program">Data privacy and protection are crucial issues for any automatic speech recognition (ASR) system when relying on client generated data for training. The best protection is achieved when training is distributed closer to the client local data, rather than centralising the training. However, distributed training suffers from system heterogeneity, due to clients having unequal computation resources, and data heterogeneity, due to training data being non-independent and identically distributed (non-IID). To tackle these challenges, we introduce FedKAD, a Federated Learning (FL) framework that uses local Knowledge Aggregation over top level feature maps and Knowledge Distillation. We show that our FedKAD achieves better communication efficiency than standard FL methods that use uniform models, due to transferring parameters of smaller size client models, and overall better accuracy than FedMD, an alternative KD-based approach designed for heterogeneous data. Our work enables faster, cheaper and more inclusive participation of clients in heterogeneous distributed training.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=1h-NIpMMvH8" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O22/22_slides.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -479,6 +507,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=fv_104gDh6U" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P14/14_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -498,6 +527,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=32v9kh3aBSQ" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P15/15_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -517,6 +547,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=2pwflH52L54" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P19/19_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -536,6 +567,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://youtu.be/lPUlXiN0aII" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P23/23_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -555,6 +587,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://youtu.be/albnlK0Ouow" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P21/21_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -574,6 +607,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://youtu.be/nIS9vqvTFIs" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P29/29_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -593,6 +627,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://youtu.be/kF_oasPn_lg" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P33/33_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -612,6 +647,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=W9c4JYb0v90%20" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P17/17_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -631,6 +667,7 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
             </td>
             
             <td class="schedule-resources">
+              <a href="https://youtu.be/ZlfLH94ZeZ8%20" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
               <a href="pdf/poster/P30/30_poster.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
             </td>
             
@@ -682,7 +719,10 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
               <span class="schedule-description program">The use of machine learning (ML) inference for various applications is growing drastically. ML inference services engage with users directly, requiring fast and accurate responses. Moreover, these services face dynamic workloads of requests, imposing changes in their computing resources. Failing to right-size computing resources results in either latency service level objectives (SLOs) violations or wasted computing resources. Adapting to dynamic workloads considering all the pillars of accuracy, latency, and resource cost is challenging. In response to these challenges, we propose an adaptation mechanism, InfAdapter, that proactively selects a set of ML model variants with their resource allocations to meet latency SLO while maximizing an objective function composed of accuracy and cost. InfAdapter decreases SLO violation and costs up to 65% and 33%, respectively, compared to a popular industry autoscaler (Kubernetes Vertical Pod Autoscaler).</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=sVbLuNO-25o" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O9/9_slides.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -700,7 +740,10 @@ In this paper, we first survey state-of-the-art approaches to robustness to Byza
 For robustness, the state-of-the-art is to train the BNNs with bit-flips in what is known as fault-aware training. We propose a method to guide fault-aware training using gradient-based explainability methods. This allows us to obtain robust and efficient BNNs for deployment on tiny devices. Experiments on audio and image processing applications show that our proposed approach outperforms the existing approaches, making it useful for obtaining efficient and robust models for a slight degradation in accuracy. This makes our approach valuable for many TinyML use cases.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://youtu.be/KubgKuphZjo" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="pdf/oral/O31/31_slides.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
