@@ -54,7 +54,7 @@ h1.logo-name {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/cover.jpg');
   background-color: #2b2b2b;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   background-size: 100% auto;
 }
 
