@@ -109,6 +109,9 @@ span.speakers-company {
 .schedule-session {
   background: #fffde1!important;
 }
+.schedule-keynote {
+  background: #e1ffe5!important;
+}
 
 .schedule-description {
     color: #999;
