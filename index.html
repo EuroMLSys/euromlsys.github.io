@@ -230,7 +230,7 @@ systems must also be developed.
         
           <section class="schedule section" id="schedule">
             <h2 class="section-title">Program</h2>
-<p><b>ACM Proceeding will be available soon on <a href="https://dl.acm.org">ACM Digital Library</a></b></p>
+<p><b>The full-text PDFs will become available on April, 22, 2024 on <a href="https://dl.acm.org/doi/proceedings/10.1145/3642970">ACM Digital Library</a></b></p>
 
 <p>Program timezone is EEST (UTC+3.00).</p>
 <div class="schedule-tbl">
@@ -273,7 +273,9 @@ systems must also be developed.
               <span class="schedule-description program">GPUs are becoming a scarce resource in high demand, as many teams build and train increasingly advanced artificial intelligence workloads. As GPUs become more performant, they consume more energy, with NVIDIA’s latest A100 and H100 graphics cards consuming upwards of 700W of power. This paper characterizes how best to scale down a large modern GPU to suite workloads that cannot fully exploit an entire GPU. The paper measures six workloads from 14 million parameter image classifiers to 1.5 billion parameter large language models, finding that partitioned GPUs with a mix of small, medium, and large partitions can deliver up to 33% less energy demand and 9% higher training throughput from a single GPU. We found high potential in fine-tuning existing models, with 55% faster training at 42% less energy. Our results suggest that multiplexing small workloads onto spatially partitioned GPUs can improve the efficiency of a single GPU while giving clients access to smaller slices of the latest GPUs that better suits their job’s demands.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S1_1__11.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -292,7 +294,9 @@ systems must also be developed.
               <span class="schedule-description program">Deep learning training is an expensive process that extensively uses GPUs. However, not all model training saturates modern powerful GPUs. To create guidelines for such cases, this paper examines the performance of the different collocation methods available on NVIDIA GPUs: naïvely submitting multiple processes on the same GPU using multiple streams, utilizing Multi-Process Service (MPS), and enabling the Multi-Instance GPU (MIG). Our results demonstrate that collocating multiple model training runs yields significant benefits, leading to up to three times training throughput despite increased epoch time. On the other hand, the aggregate memory footprint and compute needs of the models trained in parallel must fit the available memory and compute resources of the GPU. MIG can be beneficial thanks to its interference-free partitioning but can suffer from sub-optimal GPU utilization with dynamic or mixed workloads. In general, we recommend MPS as the best-performing and most flexible form of collocation for a single user submitting training jobs.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S1_2__07.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -311,7 +315,9 @@ systems must also be developed.
               <span class="schedule-description program">Large language models (LLMs) have become a significant workload since their appearance. However, they are also computationally expensive as they have billions of parameters and are trained with massive amounts of data. Thus, recent works have developed dedicated CUDA kernels for LLM training and inference instead of relying on compiler-generated ones, so that hardware resources are as fully utilized as possible. In this work, we explore the possibility of GPU native instruction optimization to further push the CUDA kernels to extreme performance. Contrary to prior works, we adopt an automatic optimization approach by defining a search space of possible GPU native instruction schedules, and then we apply stochastic search to perform optimization. Experiments show that SIP can further im- prove CUDA kernel throughput by automatically discovering better GPU native instruction schedules and the optimized schedules are verified by 10 million test samples.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S1_3__24.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -330,7 +336,9 @@ systems must also be developed.
               <span class="schedule-description program">The widespread adoption of ML has led to a high demand for GPU hardware and consequently, severe shortages of GPUs in the public cloud. Allocating a sufficient number of GPUs to train or fine-tune today’s large ML models in a single cloud region is often difficult. Users can get access to more GPUs if they are willing to run a ML training job using devices across different geographical regions. However, GPU nodes are connected with lower network bandwidth and cloud providers charge extra for data transfers across geographical regions. In this work, we explore when and how it makes sense to leverage GPUs across zones and regions for distributed ML training. We analyze the throughput and cost impact of cross-region training based on the computation and communication patterns of different model parallelism strategies, develop a profile-based analytical model for estimating training throughput and cost, and provide guidelines for allocating geo-distributed resources efficiently. We find that although ML training throughput and cost with pure data parallelism degrades significantly when nodes span geographic regions, cross-region training with pipeline parallelism is practical.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S1_4__30.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -349,7 +357,9 @@ systems must also be developed.
               <span class="schedule-description program">We present ALTO, a network orchestrator for efficiently serving compound AI systems such as pipelines of language models. ALTO leverages an optimization opportunity specific to generative language models, which is streaming intermediate outputs from the language model to downstream stages. We highlight two challenges that emerge while serving these applications at scale: handling how some stages can be stateful across partial outputs, and handling how language models can produce variable amounts of text. To address these challenges, we motivate the need for an aggregation-aware routing interface and distributed prompt-aware scheduling. ALTO’s partial output streaming increases throughput by up to 3× for a fixed latency target of 4 seconds / request and reduces tail latency by 1.8× compared to a baseline serving approach, on a complex chatbot verification pipeline.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S1_5__31.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -384,7 +394,9 @@ systems must also be developed.
               <span class="schedule-description program">Stateful network functions are increasingly used in data centers. However, their scalability remains a significant challenge since parallelizing packet processing across multiple cores requires careful configuration to avoid compromising the application's semantics or performance. This challenge is particularly important when deploying multiple stateful functions on multi-core servers. This paper proposes FlowMage, a system that leverages Large Language Models (LLMs) to perform code analysis and extract essential information from stateful network functions (NFs) prior to their deployment on a server. FlowMage uses this data to find an efficient configuration of an NF chain that maximizes performance while preserving the semantics of the NF chain. Our evaluation shows that, utilizing GPT-4, FlowMage is able to find and apply optimized configuration when deploying stateful NFs chain on a server, resulting in significant performance improvement (up to 11x) in comparison to the default configuration of the system.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S2_1__22.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -403,7 +415,9 @@ systems must also be developed.
               <span class="schedule-description program">The success of Large Language Models (LLMs) across a wide range of applications and use cases has created the need for faster and more scalable systems for LLM inference. These systems speed up LLM inference by optimizing scheduling decisions or efficiently managing the available memory. However, most of them use synthetic datasets and target latency-critical scenarios in their evaluation, thereby overlooking a considerable part of real-world use cases and workloads. As a response, this paper presents an extensive experimental evaluation that aims to capture the impact of the workload used for evaluation and quantify the benefit derived from higher memory availability. Our analysis shows that LLMs can achieve 3x higher throughput for text generation and question-answering use cases compared to text summarization and conversational ones. The latter ones seem to exhibit low levels of performance due to their demanding input sizes. In addition, non-latency-critical inference services achieve 2.3x higher throughput when 4x more memory is available. In conclusion, this paper aims to highlight the importance and impact of the chosen workloads in the evaluation of systems for LLM inference.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S2_3__03.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -422,7 +436,9 @@ systems must also be developed.
               <span class="schedule-description program">Large Language Models(LLMs) showed great potential in generating and optimizing code. Widely used sampling methods such as Nucleus Sampling, increase the diversity of generation but often produce repeated samples for low temperatures and incoherent samples for high temperatures. Furthermore, the temperature coefficient has to be tuned for each task constraining its usability. We present Priority Sampling, a simple deterministic sampling technique that produces unique samples ordered by the model's confidence. Each new sample expands the unexpanded token with the highest probability in the augmented search tree. Additionally, Priority Sampling supports generation based on regular expression that provides a controllable and structured exploration process. Priority Sampling outperforms Nucleus Sampling for any number of samples, boosting the performance of the original model from 2.87% to 5% improvement over -Oz and outperforming the autotuner used for the generation of labels for the training of the original model in just 30 samples.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S2_3__13.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -441,7 +457,9 @@ systems must also be developed.
               <span class="schedule-description program">Despite that prior work of batched inference and parameter-efficient fine-tuning techniques have reduced the resource requirements of large language models (LLMs), challenges remain in resource-constrained environments such as on-premise infrastructures to serve workload that is composed of both inference and fine-tuning jobs. Prior solutions must either pause existing jobs which causes service interruptions, or queue new jobs which results in a long delay. We present FineInfer, an efficient serving system that enables concurrent LLM fine-tuning and inference. FineInfer leverages base model multiplexing and a new task scheduling mechanism, namely deferred continuous batching, to enable iteration-level context switch and accelerate fine-tuning while offering inference latency that compromises service level agreements. Our evaluation shows that FineInfer outperforms prior solutions by up to 3x in fine-tuning latency, and 50x when the models are larger than the GPU memory.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S2_4__18.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -460,7 +478,9 @@ systems must also be developed.
               <span class="schedule-description program">This study introduces De-DSI, a novel framework that fuses large language models (LLMs) with genuine decentralization for information retrieval, particularly employing the differentiable search index (DSI) concept in a decentralized setting. Focused on efficiently connecting novel user queries with document identifiers without direct document access, De-DSI operates solely on query-docid pairs. To enhance scalability, an ensemble of DSI models is introduced, where the dataset is partitioned into smaller shards for individual model training. This approach not only maintains accuracy by reducing the number of data each model needs to handle but also facilitates scalability by aggregating outcomes from multiple models. This aggregation uses a beam search to identify top docids and applies a softmax function for score normalization, selecting documents with the highest scores for retrieval. The decentralized implementation demonstrates that retrieval success is comparable to centralized methods, with the added benefit of the possibility of distributing computational complexity across the network. This setup also allows for the retrieval of multimedia items through magnet links, eliminating the need for platforms or intermediaries.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S2_5__23.pdff" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -479,7 +499,9 @@ systems must also be developed.
               <span class="schedule-description program">Large language models (LLMs) have revolutionized the state-of-the-art of many different natural language processing tasks. Although serving LLMs is computationally and memory demanding, the rise of Small Language Models (SLMs) offers new opportunities for resource-constrained users, who now are able to serve small models with cutting-edge performance. In this paper, we present a set of experiments designed to benchmark SLM inference at performance and energy levels. Our analysis provides a new perspective in serving, highlighting that the small memory footprint of SLMs allows for reaching the Pareto-optimal throughput within the resource capacity of a single accelerator. In this regard, we present an initial set of findings demonstrating how model replication can effectively improve resource utilization for serving SLMs.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S2_6__15.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -514,7 +536,9 @@ systems must also be developed.
               <span class="schedule-description program">Federated learning is a distributed approach to machine learning in which a centralised server coordinates the learning task while training data is distributed among a potentially large set of clients. The focus of this paper is on top-N recommendations using a training set of implicit interactions between users and items. With this limited information, items with no user interaction must also be considered, to present accurate recommendations. In the past, federated recommender systems have been solved through communication of the local model updates using a Stochastic Gradient Descent (SGD) approach. However, SGD is unable to handle the full interaction dataset without the need for negative sampling. This poses a big strain in the setting of wireless networks, as negative sampling considerably increases the communication overhead. To overcome this obstacle we introduce the first federated learning matrix factorisation model fully based on Alternating Least Squares (ALS) computation. The ALS approach offers an efficient matrix factorisation solution with the ability to avoid negative sampling. We show that this novel approach can significantly reduce the communication overhead when compared to its SGD counterparts while maintaining high levels of accuracy.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S3_1__29.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -533,7 +557,9 @@ systems must also be developed.
               <span class="schedule-description program">Data preprocessing consisting of tasks like sample resizing, cropping, and filtering, is a crucial step in machine learning (ML) workflows. Even though the preprocessing step is largely ignored by work that focuses on optimizing training algorithms, in practice for many workloads preprocessing and training are pipelined. Popular ML frameworks like PyTorch use data loaders to feed data into model training. If the pipeline between preprocessing and training is not done carefully, it can cause significant waiting times on the GPU side. To address this limitation, we introduce SpeedyLoader, a system that overlaps preprocessing and training by leveraging asynchronous data preprocessing and avoiding head-of-line blocking. SpeedyLoader incorporates dedicated data loading threads, which organize preprocessed samples into queues based on their predicted processing times. Concurrently, GPUs fetch samples from these queues, ensuring training is not impeded by preprocessing completion. Compared to the default PyTorch DataLoader, SpeedyLoader reduces training time by up to 30% and increases GPU usage by 4.3x, all while maintaining a consistent evaluation accuracy of 91%.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S3_2__04.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -552,7 +578,9 @@ systems must also be developed.
               <span class="schedule-description program">Communication overhead is a significant bottleneck in federated learning (FL), which has been exaggerated with the increasing size of AI models.  In this paper, we propose FedRDMA, a communication-efficient cross-silo FL system that integrates RDMA into the FL communication protocol. To overcome the limitations of RDMA in wide-area networks (WANs), FedRDMA divides the updated model into chunks and designs a series of optimization techniques to improve the efficiency and robustness of RDMA-based communication. We implement FedRDMA atop the industrial federated learning framework FATE and evaluate it on a real-world cross-silo FL scenario. The experimental results show that FedRDMA can achieve up to 3.8x speedup in communication efficiency compared to traditional TCP/IP-based FL systems.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S3_3__17.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -606,7 +634,9 @@ systems must also be developed.
               <span class="schedule-description program">Machine-learning (ML) models are increasingly being deployed on edge devices to provide a variety of services. However, their deployment is accompanied by challenges in model privacy and auditability. Model providers want to ensure that (i) their proprietary models are not exposed to third parties; and (ii) be able to get attestations that their genuine models are operating on edge devices in accordance with the service agreement with the user. Existing measures to address these challenges have been hindered by issues such as high overheads and limited capability (processing/secure memory) on edge devices. In this work, we propose GuaranTEE, a framework to provide attestable private machine learning on the edge. GuaranTEE uses Confidential Computing Architecture (CCA), Arm's latest architectural extension that allows for the creation and deployment of dynamic Trusted Execution Environments (TEEs) within which models can be executed. We evaluate CCA's feasibility to deploy ML models by developing, evaluating, and openly releasing a prototype. We also suggest improvements to CCA to facilitate its use in protecting the entire ML deployment pipeline on edge devices.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S4_1__34.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -625,7 +655,9 @@ systems must also be developed.
               <span class="schedule-description program">The personalization of machine learning (ML) models to address data drift is a significant challenge in the context of Internet of Things (IoT) applications. Presently, most approaches focus on fine-tuning either the full base model or its last few layers to adapt to new data, while often neglecting energy costs. However, various types of data drift exist, and fine-tuning the full base model or the last few layers may not result in optimal performance in certain scenarios. We propose Target Block Fine-Tuning (TBFT), a low-energy adaptive personalization framework designed for resource-constrained devices. We categorize data drift and personalization into three types: input-level, feature-level, and output-level. For each type, we fine-tune different blocks of the model to achieve optimal performance with reduced energy costs. Specifically, input-, feature-, and output-level correspond to fine-tuning the front, middle, and rear blocks of the model. We evaluate TBFT on a ResNet model, three datasets, three different training sizes, and a Raspberry Pi. Compared with the Block Avg, where each block is fine-tuned individually and their performance improvements are averaged, TBFT exhibits an improvement in model accuracy by an average of 15.30% whilst saving 41.57% energy consumption on average compared with full fine-tuning.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S4_2__06.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -644,7 +676,9 @@ systems must also be developed.
               <span class="schedule-description program">Graph Neural Networks (GNNs) have recently emerged as popular methods for learning representations of non-euclidean data often encountered in diverse areas ranging from chemistry to source code generation. Recently, researchers have focused on learning about temporal graphs, wherein the nodes and edges of a graph and their respective features may change over time. In this paper, we focus on a nascent domain: learning generative models on temporal graphs. We have noticed that papers on this topic so far have lacked a standard evaluation for all existing models on the same benchmark of datasets and a solid evaluation protocol. We present extensive comparative experiments on state-of-the-art models from the literature. Furthermore, we propose a rigorous evaluation protocol to assess temporal generation quality, utility, and privacy.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S4_3__10.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -663,7 +697,9 @@ systems must also be developed.
               <span class="schedule-description program">This study introduces the Instance-Aware Index Advisor (IA2), a novel deep reinforcement learning (DRL)-based approach for optimizing index selection in databases facing large action spaces of potential candidates. IA2 introduces the Twin Delayed Deep Deterministic Policy Gradient - Temporal Difference State-Wise Action Refinery (TD3-TD-SWAR) model, enabling efficient index selection by understanding workload-index dependencies and employing adaptive action masking. This method includes a comprehensive workload model, enhancing its ability to adapt to unseen workloads and ensuring robust performance across diverse database environments. Evaluation on benchmarks such as TPC-H reveals IA2's suggested indexes' performance in enhancing runtime, securing a 40% reduction in runtime for complex TPC-H workloads compared to scenarios without indexes, and delivering a 20% improvement over existing state-of-the-art DRL-based index advisors.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/S4_4__26.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -690,7 +726,10 @@ systems must also be developed.
               <span class="schedule-description program">Deep learning is commonly used to make personalized recommendations to users for a wide variety of activities. However, deep learning recommendation model (DLRM) training is increasingly dominated by all-to-all and many-to-many communication patterns. While there are a wide variety of algorithms to efficiently overlap communication and computation for many collective operations, these patterns are strictly limited by network bottlenecks. We propose co-designing DLRM model training with the recently proposed Opera network, which is designed to avoid multiple network hops using time-varying source-to-destination circuits. Using measurements from state-of-the-art NVIDIA A100 GPUs, we simulate DLRM model training on networks ranging from 16 to 1024 nodes and demonstrate up to 1.79x improvement using Opera compared with equivalent fat-tree networks. We identify important parameters affecting training time and demonstrate that careful co-design is needed to optimize training latency.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://youtu.be/iVfs15yuNCw" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/P_1_5.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -709,7 +748,10 @@ systems must also be developed.
               <span class="schedule-description program">The integration of Machine Learning (ML) across public and industrial sectors has become widespread, posing unique challenges in comparison to conventional software development methods throughout the lifecycle of ML-Enabled Systems. Particularly, with the rising importance of ML platforms in software operations and the computational power associated with their training, testing and retraining, there is a growing concern about the sustainability of DevOps practices in the context of AI-enabled software. Despite the increasing interest in this domain, a comprehensive overview that offers a holistic perspective on research related to sustainable AI is currently lacking. This paper addresses this gap by presenting a Systematic Mapping Study that thoroughly examines techniques, tools, and lessons learned to assess and promote environmental sustainability in MLOps practices for ML-Enabled Systems.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://youtu.be/ScYzweEyMR4" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/P_2_9.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -728,7 +770,10 @@ systems must also be developed.
               <span class="schedule-description program">Mobile and IoT applications increasingly adopt deep learning inference to provide intelligence. Inference requests are typically sent to a cloud infrastructure over a wireless network that is highly variable, leading to the challenge of dynamic Service Level Objectives (SLOs) at the request level. This paper presents Sponge, a novel deep learning inference serving system that maximizes resource efficiency while guaranteeing dynamic SLOs. Sponge achieves its goal by applying in-place vertical scaling, dynamic batching, and request reordering. Specifically, we introduce an Integer Programming formulation to capture the resource allocation problem, providing a mathematical model of the relationship between latency, batch size, and resources. We demonstrate the potential of Sponge through a prototype implementation and preliminary experiments and discuss future works.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=2j9aPMcC7AY" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/P_3_16.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -747,7 +792,10 @@ systems must also be developed.
               <span class="schedule-description program">Resource overcommitment allows datacenters to improve resource efficiency. In this approach, the system allocates to the users the amount of resources to be most likely used, not necessarily the ones requested. To do so, the system monitors resource usage over time and predicts its future behaviour. High prediction accuracy is very important because underestimations may lead to degraded performance and user experience. In response, production-level solutions follow a conservative approach that chooses the maximum value among various other predictors. This paper reveals that this approach severely overestimates resource usage, predicting values that even surpass the amount of resources requested by the user. Our experimental analysis shows that current predictors allow for overcommitment to actually happen only 6% of the times, due to severe mispredictions that incur 568% average relative error. We show that current predictors end up causing immense resource waste. We quantify the benefit from an oracular predictor to be 59% higher resource savings on average, compared to the currently used ones. In conclusion, this paper motivates the need to create more accurate predictors for resource overcommitment and discusses potential challenges and new questions that arise.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=EaoGCROiQ0w" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/P_4_25.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -766,7 +814,10 @@ systems must also be developed.
               <span class="schedule-description program">Large Language Models (LLMs) have become an essential tool in advancing artificial intelligence and machine learning, enabling outstanding capabilities in natural language processing, and understanding. However, the efficient deployment of LLMs in production environments reveals a complex landscape of challenges and technical debt. In this paper, we aim to highlight unique forms of challenges and technical debt associated with the deployment of LLMs, including those related to memory and parallelism, model compression, and attention optimization. These challenges emphasize the necessity of custom approaches to deploying LLMs, demanding customization and sophisticated engineering solutions not readily available in broad-use machine learning libraries or inference engines.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=0BTqbMDbuOg" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/P_5_27.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -785,7 +836,10 @@ systems must also be developed.
               <span class="schedule-description program">Many recent studies have investigated the extent to which decentralised topologies for machine learning  can preserve privacy, showing that in various scenarios the exchanged model updates can leak user information. In this work, we analyse the privacy level of various decentralised topologies for Federated Learning as applied to Recommender Systems (RS), and propose an alternative hybrid topology as a first step to improve privacy, without considering solutions  such as encryption or differential privacy, which can be used on top of the proposed topology. We show that an Anonymous Random Walks (ARW) topology can be used to alleviate privacy concerns in federated RS. We measure the information leakage for each topology as a metric for privacy. Further, we design privacy attacks specific to distributed RS and explore the effect of these attacks on the different topologies with respect to user privacy. Through experiments on three public datasets, we show that the choice of topology involves a significant trade off between communication efficiency and privacy.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=Q52sLy3xb5c" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/P_6_28.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -804,7 +858,10 @@ systems must also be developed.
               <span class="schedule-description program">Agriculture, as one of humanity’s most essential industries, faces the challenge of adapting to an increasingly data-driven world. Strategic decisions in this sector hinge on access to precise and actionable data. Governments, major agriculture companies, and farmers have expressed a need for worldwide monitoring of crop commodity quantities and prices. However, the complex and diverse nature of agricultural data and crop commodities, often presented in unstructured formats, pose significant challenges in extracting meaningful insights. This study delves into the effectiveness of Large Language Models, particularly in Named Entity Recognition, focusing on their ability to efficiently tag and categorize crucial information related to agriculture, vessel tracking, imports, and exports, thereby enhancing data accessibility. Our results indicate that while fine-tuning a base model achieves high precision, Large Language Models, particularly GPT-4 and Claude v2, demonstrate comparable performance with the added benefit of requiring no additional training for new entity recognition. This research highlights the promising role of Large Language Models in agricultural AI, suggesting their use as a scalable solution for real-time data analysis and decision support in agriculture.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://www.youtube.com/watch?v=du2eLUXHYyU" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/P_7_35.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
@@ -823,7 +880,10 @@ systems must also be developed.
               <span class="schedule-description program">Generative AI models are at the forefront of advancing creative and analytical tasks, pushing the boundaries of what machines can generate and comprehend. Among these, latent diffusion models represent significant advancements in generating high-fidelity audio and images. This study introduces a systematic approach to study GPU utilisation during the training of these models by leveraging Weights & Biases and the PyTorch profiler for detailed monitoring and profiling. Our methodology is designed to uncover inefficiencies in GPU resource allocation, pinpointing bottlenecks in the training pipeline. The insights gained aim to guide the development of strategies for enhancing training efficiency, potentially reducing computational costs and accelerating the development cycle of generative AI models. This contribution not only highlights the critical role of resource optimisation in scaling AI technologies but also opens new avenues for research in efficient model training.</span>
             </td>
             
-              <td></td>
+            <td class="schedule-resources">
+              <a href="https://youtu.be/U_diEx8JIo4?si=Fbf5rxtt91QIh37a" target="_blank"><img src="img/video-48.png" height="15" valign="middle"></a><br>
+              <a href="https://www.cl.cam.ac.uk/research/srg/netos/euromlsys2024/slides/P_8_36.pdf" target="_blank"><img src="img/paper-64.png" height="15" valign="middle"></a>
+            </td>
             
           </tr>
         
